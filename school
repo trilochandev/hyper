@@ -1,0 +1,1007 @@
+Jun 22 06:42:37 ip-10-0-0-8 kernel: Linux version 4.18.0-372.9.1.el8.x86_64 (mockbuild@x86-vm-09.build.eng.bos.redhat.com) (gcc version 8.5.0 20210514 (Red Hat 8.5.0-10) (GCC)) #1 SMP Fri Apr 15 22:12:19 EDT 2022
+Jun 22 06:42:37 ip-10-0-0-8 kernel: Command line: BOOT_IMAGE=(hd0,gpt2)/boot/vmlinuz-4.18.0-372.9.1.el8.x86_64 root=UUID=eaa1f38e-de0f-4ed5-a5b5-2fa9db43bb38 console=ttyS0,115200n8 console=tty0 net.ifnames=0 rd.blacklist=nouveau nvme_core.io_timeout=4294967295 crashkernel=auto
+Jun 22 06:42:37 ip-10-0-0-8 kernel: x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+Jun 22 06:42:37 ip-10-0-0-8 kernel: x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+Jun 22 06:42:37 ip-10-0-0-8 kernel: x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'
+Jun 22 06:42:37 ip-10-0-0-8 kernel: x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:  256
+Jun 22 06:42:37 ip-10-0-0-8 kernel: x86/fpu: Enabled xstate features 0x7, context size is 832 bytes, using 'standard' format.
+Jun 22 06:42:37 ip-10-0-0-8 kernel: signal: max sigframe size: 1776
+Jun 22 06:42:37 ip-10-0-0-8 kernel: BIOS-provided physical RAM map:
+Jun 22 06:42:37 ip-10-0-0-8 kernel: BIOS-e820: [mem 0x0000000000000000-0x000000000009dfff] usable
+Jun 22 06:42:37 ip-10-0-0-8 kernel: BIOS-e820: [mem 0x000000000009e000-0x000000000009ffff] reserved
+Jun 22 06:42:37 ip-10-0-0-8 kernel: BIOS-e820: [mem 0x00000000000e0000-0x00000000000fffff] reserved
+Jun 22 06:42:37 ip-10-0-0-8 kernel: BIOS-e820: [mem 0x0000000000100000-0x000000003fffffff] usable
+Jun 22 06:42:37 ip-10-0-0-8 kernel: BIOS-e820: [mem 0x00000000fc000000-0x00000000ffffffff] reserved
+Jun 22 06:42:37 ip-10-0-0-8 kernel: NX (Execute Disable) protection: active
+Jun 22 06:42:37 ip-10-0-0-8 kernel: SMBIOS 2.7 present.
+Jun 22 06:42:37 ip-10-0-0-8 kernel: DMI: Xen HVM domU, BIOS 4.11.amazon 08/24/2006
+Jun 22 06:42:37 ip-10-0-0-8 kernel: Hypervisor detected: Xen HVM
+Jun 22 06:42:37 ip-10-0-0-8 kernel: Xen version 4.11.
+Jun 22 06:42:37 ip-10-0-0-8 kernel: Netfront and the Xen platform PCI driver have been compiled for this kernel: unplug emulated NICs.
+Jun 22 06:42:37 ip-10-0-0-8 kernel: Blkfront and the Xen platform PCI driver have been compiled for this kernel: unplug emulated disks.#012You might have to change the root device#012from /dev/hd[a-d] to /dev/xvd[a-d]#012in your root= kernel command line option
+Jun 22 06:42:37 ip-10-0-0-8 kernel: tsc: Fast TSC calibration using PIT
+Jun 22 06:42:37 ip-10-0-0-8 kernel: tsc: Detected 2400.148 MHz processor
+Jun 22 06:42:37 ip-10-0-0-8 kernel: tsc: Detected 2400.012 MHz TSC
+Jun 22 06:42:37 ip-10-0-0-8 kernel: last_pfn = 0x40000 max_arch_pfn = 0x400000000
+Jun 22 06:42:37 ip-10-0-0-8 kernel: x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT  
+Jun 22 06:42:37 ip-10-0-0-8 kernel: found SMP MP-table at [mem 0x000fb9a0-0x000fb9af]
+Jun 22 06:42:37 ip-10-0-0-8 kernel: RAMDISK: [mem 0x30a11000-0x34500fff]
+Jun 22 06:42:37 ip-10-0-0-8 kernel: ACPI: Early table checksum verification disabled
+Jun 22 06:42:37 ip-10-0-0-8 kernel: ACPI: RSDP 0x00000000000EA020 000024 (v02 Xen   )
+Jun 22 06:42:37 ip-10-0-0-8 kernel: ACPI: XSDT 0x00000000FC00C780 000054 (v01 Xen    HVM      00000000 HVML 00000000)
+Jun 22 06:42:37 ip-10-0-0-8 kernel: ACPI: FACP 0x00000000FC00C440 0000F4 (v04 Xen    HVM      00000000 HVML 00000000)
+Jun 22 06:42:37 ip-10-0-0-8 kernel: ACPI: DSDT 0x00000000FC003940 008A7E (v02 Xen    HVM      00000000 INTL 20090123)
+Jun 22 06:42:37 ip-10-0-0-8 kernel: ACPI: FACS 0x00000000FC003900 000040
+Jun 22 06:42:37 ip-10-0-0-8 kernel: ACPI: FACS 0x00000000FC003900 000040
+Jun 22 06:42:37 ip-10-0-0-8 kernel: ACPI: APIC 0x00000000FC00C540 0000D8 (v02 Xen    HVM      00000000 HVML 00000000)
+Jun 22 06:42:37 ip-10-0-0-8 kernel: ACPI: HPET 0x00000000FC00C690 000038 (v01 Xen    HVM      00000000 HVML 00000000)
+Jun 22 06:42:37 ip-10-0-0-8 kernel: ACPI: WAET 0x00000000FC00C6D0 000028 (v01 Xen    HVM      00000000 HVML 00000000)
+Jun 22 06:42:37 ip-10-0-0-8 kernel: ACPI: SSDT 0x00000000FC00C700 000031 (v02 Xen    HVM      00000000 INTL 20090123)
+Jun 22 06:42:37 ip-10-0-0-8 kernel: ACPI: SSDT 0x00000000FC00C740 000033 (v02 Xen    HVM      00000000 INTL 20090123)
+Jun 22 06:42:37 ip-10-0-0-8 kernel: ACPI: Reserving FACP table memory at [mem 0xfc00c440-0xfc00c533]
+Jun 22 06:42:37 ip-10-0-0-8 kernel: ACPI: Reserving DSDT table memory at [mem 0xfc003940-0xfc00c3bd]
+Jun 22 06:42:37 ip-10-0-0-8 kernel: ACPI: Reserving FACS table memory at [mem 0xfc003900-0xfc00393f]
+Jun 22 06:42:37 ip-10-0-0-8 kernel: ACPI: Reserving FACS table memory at [mem 0xfc003900-0xfc00393f]
+Jun 22 06:42:37 ip-10-0-0-8 kernel: ACPI: Reserving APIC table memory at [mem 0xfc00c540-0xfc00c617]
+Jun 22 06:42:37 ip-10-0-0-8 kernel: ACPI: Reserving HPET table memory at [mem 0xfc00c690-0xfc00c6c7]
+Jun 22 06:42:37 ip-10-0-0-8 kernel: ACPI: Reserving WAET table memory at [mem 0xfc00c6d0-0xfc00c6f7]
+Jun 22 06:42:37 ip-10-0-0-8 kernel: ACPI: Reserving SSDT table memory at [mem 0xfc00c700-0xfc00c730]
+Jun 22 06:42:37 ip-10-0-0-8 kernel: ACPI: Reserving SSDT table memory at [mem 0xfc00c740-0xfc00c772]
+Jun 22 06:42:37 ip-10-0-0-8 kernel: No NUMA configuration found
+Jun 22 06:42:37 ip-10-0-0-8 kernel: Faking a node at [mem 0x0000000000000000-0x000000003fffffff]
+Jun 22 06:42:37 ip-10-0-0-8 kernel: NODE_DATA(0) allocated [mem 0x3ffd5000-0x3fffffff]
+Jun 22 06:42:37 ip-10-0-0-8 kernel: Using crashkernel=auto, the size chosen is a best effort estimation.
+Jun 22 06:42:37 ip-10-0-0-8 kernel: Reserving 160MB of memory at 848MB for crashkernel (System RAM: 1023MB)
+Jun 22 06:42:37 ip-10-0-0-8 kernel: Zone ranges:
+Jun 22 06:42:37 ip-10-0-0-8 kernel:  DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+Jun 22 06:42:37 ip-10-0-0-8 kernel:  DMA32    [mem 0x0000000001000000-0x000000003fffffff]
+Jun 22 06:42:37 ip-10-0-0-8 kernel:  Normal   empty
+Jun 22 06:42:37 ip-10-0-0-8 kernel:  Device   empty
+Jun 22 06:42:37 ip-10-0-0-8 kernel: Movable zone start for each node
+Jun 22 06:42:37 ip-10-0-0-8 kernel: Early memory node ranges
+Jun 22 06:42:37 ip-10-0-0-8 kernel:  node   0: [mem 0x0000000000001000-0x000000000009dfff]
+Jun 22 06:42:37 ip-10-0-0-8 kernel:  node   0: [mem 0x0000000000100000-0x000000003fffffff]
+Jun 22 06:42:37 ip-10-0-0-8 kernel: Zeroed struct page in unavailable ranges: 99 pages
+Jun 22 06:42:37 ip-10-0-0-8 kernel: Initmem setup node 0 [mem 0x0000000000001000-0x000000003fffffff]
+Jun 22 06:42:37 ip-10-0-0-8 kernel: ACPI: PM-Timer IO Port: 0xb008
+Jun 22 06:42:37 ip-10-0-0-8 kernel: IOAPIC[0]: apic_id 1, version 17, address 0xfec00000, GSI 0-47
+Jun 22 06:42:37 ip-10-0-0-8 kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+Jun 22 06:42:37 ip-10-0-0-8 kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 5 global_irq 5 low level)
+Jun 22 06:42:37 ip-10-0-0-8 kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 10 global_irq 10 low level)
+Jun 22 06:42:37 ip-10-0-0-8 kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 11 global_irq 11 low level)
+Jun 22 06:42:37 ip-10-0-0-8 kernel: Using ACPI (MADT) for SMP configuration information
+Jun 22 06:42:37 ip-10-0-0-8 kernel: ACPI: HPET id: 0x8086a201 base: 0xfed00000
+Jun 22 06:42:37 ip-10-0-0-8 kernel: smpboot: Allowing 15 CPUs, 14 hotplug CPUs
+Jun 22 06:42:37 ip-10-0-0-8 kernel: PM: Registered nosave memory: [mem 0x00000000-0x00000fff]
+Jun 22 06:42:37 ip-10-0-0-8 kernel: PM: Registered nosave memory: [mem 0x0009e000-0x0009ffff]
+Jun 22 06:42:37 ip-10-0-0-8 kernel: PM: Registered nosave memory: [mem 0x000a0000-0x000dffff]
+Jun 22 06:42:37 ip-10-0-0-8 kernel: PM: Registered nosave memory: [mem 0x000e0000-0x000fffff]
+Jun 22 06:42:37 ip-10-0-0-8 kernel: [mem 0x40000000-0xfbffffff] available for PCI devices
+Jun 22 06:42:37 ip-10-0-0-8 kernel: Booting paravirtualized kernel on Xen HVM
+Jun 22 06:42:37 ip-10-0-0-8 kernel: clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1910969940391419 ns
+Jun 22 06:42:37 ip-10-0-0-8 kernel: setup_percpu: NR_CPUS:8192 nr_cpumask_bits:15 nr_cpu_ids:15 nr_node_ids:1
+Jun 22 06:42:37 ip-10-0-0-8 kernel: percpu: Embedded 55 pages/cpu s188416 r8192 d28672 u262144
+Jun 22 06:42:37 ip-10-0-0-8 kernel: PV qspinlock hash table entries: 256 (order: 0, 4096 bytes, linear)
+Jun 22 06:42:37 ip-10-0-0-8 kernel: Built 1 zonelists, mobility grouping on.  Total pages: 257792
+Jun 22 06:42:37 ip-10-0-0-8 kernel: Policy zone: DMA32
+Jun 22 06:42:37 ip-10-0-0-8 kernel: Kernel command line: BOOT_IMAGE=(hd0,gpt2)/boot/vmlinuz-4.18.0-372.9.1.el8.x86_64 root=UUID=eaa1f38e-de0f-4ed5-a5b5-2fa9db43bb38 console=ttyS0,115200n8 console=tty0 net.ifnames=0 rd.blacklist=nouveau nvme_core.io_timeout=4294967295 crashkernel=auto
+Jun 22 06:42:37 ip-10-0-0-8 kernel: Specific versions of hardware are certified with Red Hat Enterprise Linux 8. Please see the list of hardware certified with Red Hat Enterprise Linux 8 at https://catalog.redhat.com.
+Jun 22 06:42:37 ip-10-0-0-8 kernel: Memory: 261120K/1048180K available (12293K kernel code, 5865K rwdata, 8292K rodata, 2520K init, 14348K bss, 296004K reserved, 0K cma-reserved)
+Jun 22 06:42:37 ip-10-0-0-8 kernel: SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=15, Nodes=1
+Jun 22 06:42:37 ip-10-0-0-8 kernel: Kernel/User page tables isolation: enabled
+Jun 22 06:42:37 ip-10-0-0-8 kernel: ftrace: allocating 39999 entries in 157 pages
+Jun 22 06:42:37 ip-10-0-0-8 kernel: ftrace: allocated 157 pages with 5 groups
+Jun 22 06:42:37 ip-10-0-0-8 kernel: rcu: Hierarchical RCU implementation.
+Jun 22 06:42:37 ip-10-0-0-8 kernel: rcu: #011RCU restricting CPUs from NR_CPUS=8192 to nr_cpu_ids=15.
+Jun 22 06:42:37 ip-10-0-0-8 kernel: #011Rude variant of Tasks RCU enabled.
+Jun 22 06:42:37 ip-10-0-0-8 kernel: #011Tracing variant of Tasks RCU enabled.
+Jun 22 06:42:37 ip-10-0-0-8 kernel: rcu: RCU calculated value of scheduler-enlistment delay is 100 jiffies.
+Jun 22 06:42:37 ip-10-0-0-8 kernel: rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=15
+Jun 22 06:42:37 ip-10-0-0-8 kernel: NR_IRQS: 524544, nr_irqs: 952, preallocated irqs: 16
+Jun 22 06:42:37 ip-10-0-0-8 kernel: xen:events: Using 2-level ABI
+Jun 22 06:42:37 ip-10-0-0-8 kernel: xen:events: Xen HVM callback vector for event delivery is enabled
+Jun 22 06:42:37 ip-10-0-0-8 kernel: random: crng done (trusting CPU's manufacturer)
+Jun 22 06:42:37 ip-10-0-0-8 kernel: Console: colour VGA+ 80x25
+Jun 22 06:42:37 ip-10-0-0-8 kernel: printk: console [tty0] enabled
+Jun 22 06:42:37 ip-10-0-0-8 kernel: Cannot get hvm parameter CONSOLE_EVTCHN (18): -22!
+Jun 22 06:42:37 ip-10-0-0-8 kernel: printk: console [ttyS0] enabled
+Jun 22 06:42:37 ip-10-0-0-8 kernel: ACPI: Core revision 20210604
+Jun 22 06:42:37 ip-10-0-0-8 kernel: clocksource: hpet: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 30580167144 ns
+Jun 22 06:42:37 ip-10-0-0-8 kernel: APIC: Switch to symmetric I/O mode setup
+Jun 22 06:42:37 ip-10-0-0-8 kernel: x2apic: IRQ remapping doesn't support X2APIC mode
+Jun 22 06:42:37 ip-10-0-0-8 kernel: Switched APIC routing to physical flat.
+Jun 22 06:42:37 ip-10-0-0-8 kernel: ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=0 pin2=0
+Jun 22 06:42:37 ip-10-0-0-8 kernel: clocksource: tsc-early: mask: 0xffffffffffffffff max_cycles: 0x229842dd0bd, max_idle_ns: 440795319571 ns
+Jun 22 06:42:37 ip-10-0-0-8 kernel: Calibrating delay loop (skipped), value calculated using timer frequency.. 4800.02 BogoMIPS (lpj=2400012)
+Jun 22 06:42:37 ip-10-0-0-8 kernel: pid_max: default: 32768 minimum: 301
+Jun 22 06:42:37 ip-10-0-0-8 kernel: LSM: Security Framework initializing
+Jun 22 06:42:37 ip-10-0-0-8 kernel: Yama: becoming mindful.
+Jun 22 06:42:37 ip-10-0-0-8 kernel: SELinux:  Initializing.
+Jun 22 06:42:37 ip-10-0-0-8 kernel: LSM support for eBPF active
+Jun 22 06:42:37 ip-10-0-0-8 kernel: Dentry cache hash table entries: 131072 (order: 8, 1048576 bytes, vmalloc)
+Jun 22 06:42:37 ip-10-0-0-8 kernel: Inode-cache hash table entries: 65536 (order: 7, 524288 bytes, vmalloc)
+Jun 22 06:42:37 ip-10-0-0-8 kernel: Mount-cache hash table entries: 2048 (order: 2, 16384 bytes, vmalloc)
+Jun 22 06:42:37 ip-10-0-0-8 kernel: Mountpoint-cache hash table entries: 2048 (order: 2, 16384 bytes, vmalloc)
+Jun 22 06:42:37 ip-10-0-0-8 kernel: Last level iTLB entries: 4KB 1024, 2MB 1024, 4MB 1024
+Jun 22 06:42:37 ip-10-0-0-8 kernel: Last level dTLB entries: 4KB 1024, 2MB 1024, 4MB 1024, 1GB 4
+Jun 22 06:42:37 ip-10-0-0-8 kernel: FEATURE SPEC_CTRL Not Present
+Jun 22 06:42:37 ip-10-0-0-8 kernel: FEATURE IBPB_SUPPORT Not Present
+Jun 22 06:42:37 ip-10-0-0-8 kernel: Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+Jun 22 06:42:37 ip-10-0-0-8 kernel: Spectre V2 : Mitigation: Retpolines
+Jun 22 06:42:37 ip-10-0-0-8 kernel: Spectre V2 : Spectre v2 / SpectreRSB mitigation: Filling RSB on context switch
+Jun 22 06:42:37 ip-10-0-0-8 kernel: Speculative Store Bypass: Vulnerable
+Jun 22 06:42:37 ip-10-0-0-8 kernel: MDS: Vulnerable: Clear CPU buffers attempted, no microcode
+Jun 22 06:42:37 ip-10-0-0-8 kernel: clocksource: xen: mask: 0xffffffffffffffff max_cycles: 0x1cd42e4dffb, max_idle_ns: 881590591483 ns
+Jun 22 06:42:37 ip-10-0-0-8 kernel: installing Xen timer for CPU 0
+Jun 22 06:42:37 ip-10-0-0-8 kernel: smpboot: CPU0: Intel(R) Xeon(R) CPU E5-2676 v3 @ 2.40GHz (family: 0x6, model: 0x3f, stepping: 0x2)
+Jun 22 06:42:37 ip-10-0-0-8 kernel: cpu 0 spinlock event irq 53
+Jun 22 06:42:37 ip-10-0-0-8 kernel: Performance Events: unsupported p6 CPU model 63 no PMU driver, software events only.
+Jun 22 06:42:37 ip-10-0-0-8 kernel: rcu: Hierarchical SRCU implementation.
+Jun 22 06:42:37 ip-10-0-0-8 kernel: NMI watchdog: Perf NMI watchdog permanently disabled
+Jun 22 06:42:37 ip-10-0-0-8 kernel: smp: Bringing up secondary CPUs ...
+Jun 22 06:42:37 ip-10-0-0-8 kernel: smp: Brought up 1 node, 1 CPU
+Jun 22 06:42:37 ip-10-0-0-8 kernel: smpboot: Max logical packages: 15
+Jun 22 06:42:37 ip-10-0-0-8 kernel: smpboot: Total of 1 processors activated (4800.02 BogoMIPS)
+Jun 22 06:42:37 ip-10-0-0-8 kernel: node 0 deferred pages initialised in 2ms
+Jun 22 06:42:37 ip-10-0-0-8 kernel: devtmpfs: initialized
+Jun 22 06:42:37 ip-10-0-0-8 kernel: x86/mm: Memory block size: 128MB
+Jun 22 06:42:37 ip-10-0-0-8 kernel: clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1911260446275000 ns
+Jun 22 06:42:37 ip-10-0-0-8 kernel: futex hash table entries: 4096 (order: 6, 262144 bytes, vmalloc)
+Jun 22 06:42:37 ip-10-0-0-8 kernel: pinctrl core: initialized pinctrl subsystem
+Jun 22 06:42:37 ip-10-0-0-8 kernel: NET: Registered protocol family 16
+Jun 22 06:42:37 ip-10-0-0-8 kernel: DMA: preallocated 128 KiB GFP_KERNEL pool for atomic allocations
+Jun 22 06:42:37 ip-10-0-0-8 kernel: DMA: preallocated 128 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+Jun 22 06:42:37 ip-10-0-0-8 kernel: DMA: preallocated 128 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+Jun 22 06:42:37 ip-10-0-0-8 kernel: audit: initializing netlink subsys (disabled)
+Jun 22 06:42:37 ip-10-0-0-8 kernel: audit: type=2000 audit(1655880155.593:1): state=initialized audit_enabled=0 res=1
+Jun 22 06:42:37 ip-10-0-0-8 kernel: cpuidle: using governor menu
+Jun 22 06:42:37 ip-10-0-0-8 kernel: ACPI: bus type PCI registered
+Jun 22 06:42:37 ip-10-0-0-8 kernel: acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+Jun 22 06:42:37 ip-10-0-0-8 kernel: PCI: Using configuration type 1 for base access
+Jun 22 06:42:37 ip-10-0-0-8 kernel: HugeTLB registered 2.00 MiB page size, pre-allocated 0 pages
+Jun 22 06:42:37 ip-10-0-0-8 kernel: cryptd: max_cpu_qlen set to 1000
+Jun 22 06:42:37 ip-10-0-0-8 kernel: ACPI: Added _OSI(Module Device)
+Jun 22 06:42:37 ip-10-0-0-8 kernel: ACPI: Added _OSI(Processor Device)
+Jun 22 06:42:37 ip-10-0-0-8 kernel: ACPI: Added _OSI(3.0 _SCP Extensions)
+Jun 22 06:42:37 ip-10-0-0-8 kernel: ACPI: Added _OSI(Processor Aggregator Device)
+Jun 22 06:42:37 ip-10-0-0-8 kernel: ACPI: Added _OSI(Linux-Dell-Video)
+Jun 22 06:42:37 ip-10-0-0-8 kernel: ACPI: Added _OSI(Linux-Lenovo-NV-HDMI-Audio)
+Jun 22 06:42:37 ip-10-0-0-8 kernel: ACPI: Added _OSI(Linux-HPI-Hybrid-Graphics)
+Jun 22 06:42:37 ip-10-0-0-8 kernel: ACPI: 3 ACPI AML tables successfully acquired and loaded
+Jun 22 06:42:37 ip-10-0-0-8 kernel: ACPI: Interpreter enabled
+Jun 22 06:42:37 ip-10-0-0-8 kernel: ACPI: PM: (supports S0 S3 S4 S5)
+Jun 22 06:42:37 ip-10-0-0-8 kernel: ACPI: Using IOAPIC for interrupt routing
+Jun 22 06:42:37 ip-10-0-0-8 kernel: PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+Jun 22 06:42:37 ip-10-0-0-8 kernel: ACPI: Enabled 2 GPEs in block 00 to 0F
+Jun 22 06:42:37 ip-10-0-0-8 kernel: ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+Jun 22 06:42:37 ip-10-0-0-8 kernel: acpi PNP0A03:00: _OSC: OS supports [ASPM ClockPM Segments MSI EDR HPX-Type3]
+Jun 22 06:42:37 ip-10-0-0-8 kernel: acpi PNP0A03:00: _OSC: not requesting OS control; OS requires [ExtendedConfig ASPM ClockPM MSI]
+Jun 22 06:42:37 ip-10-0-0-8 kernel: acpi PNP0A03:00: fail to add MMCONFIG information, can't access extended PCI configuration space under this bridge.
+Jun 22 06:42:37 ip-10-0-0-8 kernel: acpiphp: Slot [0] registered
+Jun 22 06:42:37 ip-10-0-0-8 kernel: acpiphp: Slot [3] registered
+Jun 22 06:42:37 ip-10-0-0-8 kernel: acpiphp: Slot [4] registered
+Jun 22 06:42:37 ip-10-0-0-8 kernel: acpiphp: Slot [5] registered
+Jun 22 06:42:37 ip-10-0-0-8 kernel: acpiphp: Slot [6] registered
+Jun 22 06:42:37 ip-10-0-0-8 kernel: acpiphp: Slot [7] registered
+Jun 22 06:42:37 ip-10-0-0-8 kernel: acpiphp: Slot [8] registered
+Jun 22 06:42:37 ip-10-0-0-8 kernel: acpiphp: Slot [9] registered
+Jun 22 06:42:37 ip-10-0-0-8 kernel: acpiphp: Slot [10] registered
+Jun 22 06:42:37 ip-10-0-0-8 kernel: acpiphp: Slot [11] registered
+Jun 22 06:42:37 ip-10-0-0-8 kernel: acpiphp: Slot [12] registered
+Jun 22 06:42:37 ip-10-0-0-8 kernel: acpiphp: Slot [13] registered
+Jun 22 06:42:37 ip-10-0-0-8 kernel: acpiphp: Slot [14] registered
+Jun 22 06:42:37 ip-10-0-0-8 kernel: acpiphp: Slot [15] registered
+Jun 22 06:42:37 ip-10-0-0-8 kernel: acpiphp: Slot [16] registered
+Jun 22 06:42:37 ip-10-0-0-8 kernel: acpiphp: Slot [17] registered
+Jun 22 06:42:37 ip-10-0-0-8 kernel: acpiphp: Slot [18] registered
+Jun 22 06:42:37 ip-10-0-0-8 kernel: acpiphp: Slot [19] registered
+Jun 22 06:42:37 ip-10-0-0-8 kernel: acpiphp: Slot [20] registered
+Jun 22 06:42:37 ip-10-0-0-8 kernel: acpiphp: Slot [21] registered
+Jun 22 06:42:37 ip-10-0-0-8 kernel: acpiphp: Slot [22] registered
+Jun 22 06:42:37 ip-10-0-0-8 kernel: acpiphp: Slot [23] registered
+Jun 22 06:42:37 ip-10-0-0-8 kernel: acpiphp: Slot [24] registered
+Jun 22 06:42:37 ip-10-0-0-8 kernel: acpiphp: Slot [25] registered
+Jun 22 06:42:37 ip-10-0-0-8 kernel: acpiphp: Slot [26] registered
+Jun 22 06:42:37 ip-10-0-0-8 kernel: acpiphp: Slot [27] registered
+Jun 22 06:42:37 ip-10-0-0-8 kernel: acpiphp: Slot [28] registered
+Jun 22 06:42:37 ip-10-0-0-8 kernel: acpiphp: Slot [29] registered
+Jun 22 06:42:37 ip-10-0-0-8 kernel: acpiphp: Slot [30] registered
+Jun 22 06:42:37 ip-10-0-0-8 kernel: acpiphp: Slot [31] registered
+Jun 22 06:42:37 ip-10-0-0-8 kernel: PCI host bridge to bus 0000:00
+Jun 22 06:42:37 ip-10-0-0-8 kernel: pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+Jun 22 06:42:37 ip-10-0-0-8 kernel: pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+Jun 22 06:42:37 ip-10-0-0-8 kernel: pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+Jun 22 06:42:37 ip-10-0-0-8 kernel: pci_bus 0000:00: root bus resource [mem 0xf0000000-0xfbffffff window]
+Jun 22 06:42:37 ip-10-0-0-8 kernel: pci_bus 0000:00: root bus resource [bus 00-ff]
+Jun 22 06:42:37 ip-10-0-0-8 kernel: pci 0000:00:00.0: [8086:1237] type 00 class 0x060000
+Jun 22 06:42:37 ip-10-0-0-8 kernel: pci 0000:00:01.0: [8086:7000] type 00 class 0x060100
+Jun 22 06:42:37 ip-10-0-0-8 kernel: pci 0000:00:01.1: [8086:7010] type 00 class 0x010180
+Jun 22 06:42:37 ip-10-0-0-8 kernel: pci 0000:00:01.1: reg 0x20: [io  0xc100-0xc10f]
+Jun 22 06:42:37 ip-10-0-0-8 kernel: pci 0000:00:01.1: legacy IDE quirk: reg 0x10: [io  0x01f0-0x01f7]
+Jun 22 06:42:37 ip-10-0-0-8 kernel: pci 0000:00:01.1: legacy IDE quirk: reg 0x14: [io  0x03f6]
+Jun 22 06:42:37 ip-10-0-0-8 kernel: pci 0000:00:01.1: legacy IDE quirk: reg 0x18: [io  0x0170-0x0177]
+Jun 22 06:42:37 ip-10-0-0-8 kernel: pci 0000:00:01.1: legacy IDE quirk: reg 0x1c: [io  0x0376]
+Jun 22 06:42:37 ip-10-0-0-8 kernel: * Found PM-Timer Bug on the chipset. Due to workarounds for a bug,#012* this clock source is slow. Consider trying other clock sources
+Jun 22 06:42:37 ip-10-0-0-8 kernel: pci 0000:00:01.3: [8086:7113] type 00 class 0x068000
+Jun 22 06:42:37 ip-10-0-0-8 kernel: pci 0000:00:01.3: quirk: [io  0xb000-0xb03f] claimed by PIIX4 ACPI
+Jun 22 06:42:37 ip-10-0-0-8 kernel: pci 0000:00:02.0: [1013:00b8] type 00 class 0x030000
+Jun 22 06:42:37 ip-10-0-0-8 kernel: pci 0000:00:02.0: reg 0x10: [mem 0xf0000000-0xf1ffffff pref]
+Jun 22 06:42:37 ip-10-0-0-8 kernel: pci 0000:00:02.0: reg 0x14: [mem 0xf3000000-0xf3000fff]
+Jun 22 06:42:37 ip-10-0-0-8 kernel: pci 0000:00:03.0: [5853:0001] type 00 class 0xff8000
+Jun 22 06:42:37 ip-10-0-0-8 kernel: pci 0000:00:03.0: reg 0x10: [io  0xc000-0xc0ff]
+Jun 22 06:42:37 ip-10-0-0-8 kernel: pci 0000:00:03.0: reg 0x14: [mem 0xf2000000-0xf2ffffff pref]
+Jun 22 06:42:37 ip-10-0-0-8 kernel: ACPI: PCI: Interrupt link LNKA configured for IRQ 5
+Jun 22 06:42:37 ip-10-0-0-8 kernel: ACPI: PCI: Interrupt link LNKB configured for IRQ 10
+Jun 22 06:42:37 ip-10-0-0-8 kernel: ACPI: PCI: Interrupt link LNKC configured for IRQ 11
+Jun 22 06:42:37 ip-10-0-0-8 kernel: ACPI: PCI: Interrupt link LNKD configured for IRQ 5
+Jun 22 06:42:37 ip-10-0-0-8 kernel: xen:balloon: Initialising balloon driver
+Jun 22 06:42:37 ip-10-0-0-8 kernel: iommu: Default domain type: Passthrough 
+Jun 22 06:42:37 ip-10-0-0-8 kernel: pci 0000:00:02.0: vgaarb: setting as boot VGA device
+Jun 22 06:42:37 ip-10-0-0-8 kernel: pci 0000:00:02.0: vgaarb: VGA device added: decodes=io+mem,owns=io+mem,locks=none
+Jun 22 06:42:37 ip-10-0-0-8 kernel: pci 0000:00:02.0: vgaarb: bridge control possible
+Jun 22 06:42:37 ip-10-0-0-8 kernel: vgaarb: loaded
+Jun 22 06:42:37 ip-10-0-0-8 kernel: SCSI subsystem initialized
+Jun 22 06:42:37 ip-10-0-0-8 kernel: ACPI: bus type USB registered
+Jun 22 06:42:37 ip-10-0-0-8 kernel: usbcore: registered new interface driver usbfs
+Jun 22 06:42:37 ip-10-0-0-8 kernel: usbcore: registered new interface driver hub
+Jun 22 06:42:37 ip-10-0-0-8 kernel: usbcore: registered new device driver usb
+Jun 22 06:42:37 ip-10-0-0-8 kernel: pps_core: LinuxPPS API ver. 1 registered
+Jun 22 06:42:37 ip-10-0-0-8 kernel: pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+Jun 22 06:42:37 ip-10-0-0-8 kernel: PTP clock support registered
+Jun 22 06:42:37 ip-10-0-0-8 kernel: EDAC MC: Ver: 3.0.0
+Jun 22 06:42:37 ip-10-0-0-8 kernel: PCI: Using ACPI for IRQ routing
+Jun 22 06:42:37 ip-10-0-0-8 kernel: NetLabel: Initializing
+Jun 22 06:42:37 ip-10-0-0-8 kernel: NetLabel:  domain hash size = 128
+Jun 22 06:42:37 ip-10-0-0-8 kernel: NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+Jun 22 06:42:37 ip-10-0-0-8 kernel: NetLabel:  unlabeled traffic allowed by default
+Jun 22 06:42:37 ip-10-0-0-8 kernel: HPET: 3 timers in total, 0 timers will be used for per-cpu timer
+Jun 22 06:42:37 ip-10-0-0-8 kernel: hpet0: at MMIO 0xfed00000, IRQs 2, 8, 0
+Jun 22 06:42:37 ip-10-0-0-8 kernel: hpet0: 3 comparators, 64-bit 62.500000 MHz counter
+Jun 22 06:42:37 ip-10-0-0-8 kernel: clocksource: Switched to clocksource xen
+Jun 22 06:42:37 ip-10-0-0-8 kernel: VFS: Disk quotas dquot_6.6.0
+Jun 22 06:42:37 ip-10-0-0-8 kernel: VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+Jun 22 06:42:37 ip-10-0-0-8 kernel: pnp: PnP ACPI init
+Jun 22 06:42:37 ip-10-0-0-8 kernel: system 00:00: [mem 0x00000000-0x0009ffff] could not be reserved
+Jun 22 06:42:37 ip-10-0-0-8 kernel: system 00:01: [io  0x08a0-0x08a3] has been reserved
+Jun 22 06:42:37 ip-10-0-0-8 kernel: system 00:01: [io  0x0cc0-0x0ccf] has been reserved
+Jun 22 06:42:37 ip-10-0-0-8 kernel: system 00:01: [io  0x04d0-0x04d1] has been reserved
+Jun 22 06:42:37 ip-10-0-0-8 kernel: system 00:07: [io  0x10c0-0x1141] has been reserved
+Jun 22 06:42:37 ip-10-0-0-8 kernel: system 00:07: [io  0xb044-0xb047] has been reserved
+Jun 22 06:42:37 ip-10-0-0-8 kernel: pnp: PnP ACPI: found 8 devices
+Jun 22 06:42:37 ip-10-0-0-8 kernel: clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+Jun 22 06:42:37 ip-10-0-0-8 kernel: pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+Jun 22 06:42:37 ip-10-0-0-8 kernel: pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+Jun 22 06:42:37 ip-10-0-0-8 kernel: pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff window]
+Jun 22 06:42:37 ip-10-0-0-8 kernel: pci_bus 0000:00: resource 7 [mem 0xf0000000-0xfbffffff window]
+Jun 22 06:42:37 ip-10-0-0-8 kernel: NET: Registered protocol family 2
+Jun 22 06:42:37 ip-10-0-0-8 kernel: IP idents hash table entries: 16384 (order: 5, 131072 bytes, vmalloc)
+Jun 22 06:42:37 ip-10-0-0-8 kernel: tcp_listen_portaddr_hash hash table entries: 512 (order: 1, 8192 bytes, vmalloc)
+Jun 22 06:42:37 ip-10-0-0-8 kernel: TCP established hash table entries: 8192 (order: 4, 65536 bytes, vmalloc)
+Jun 22 06:42:37 ip-10-0-0-8 kernel: TCP bind hash table entries: 8192 (order: 5, 131072 bytes, vmalloc)
+Jun 22 06:42:37 ip-10-0-0-8 kernel: TCP: Hash tables configured (established 8192 bind 8192)
+Jun 22 06:42:37 ip-10-0-0-8 kernel: MPTCP token hash table entries: 1024 (order: 2, 24576 bytes, vmalloc)
+Jun 22 06:42:37 ip-10-0-0-8 kernel: UDP hash table entries: 512 (order: 2, 16384 bytes, vmalloc)
+Jun 22 06:42:37 ip-10-0-0-8 kernel: UDP-Lite hash table entries: 512 (order: 2, 16384 bytes, vmalloc)
+Jun 22 06:42:37 ip-10-0-0-8 kernel: NET: Registered protocol family 1
+Jun 22 06:42:37 ip-10-0-0-8 kernel: NET: Registered protocol family 44
+Jun 22 06:42:37 ip-10-0-0-8 kernel: pci 0000:00:00.0: Limiting direct PCI/PCI transfers
+Jun 22 06:42:37 ip-10-0-0-8 kernel: pci 0000:00:01.0: PIIX3: Enabling Passive Release
+Jun 22 06:42:37 ip-10-0-0-8 kernel: pci 0000:00:01.0: Activating ISA DMA hang workarounds
+Jun 22 06:42:37 ip-10-0-0-8 kernel: pci 0000:00:02.0: Video device with shadowed ROM at [mem 0x000c0000-0x000dffff]
+Jun 22 06:42:37 ip-10-0-0-8 kernel: PCI: CLS 0 bytes, default 64
+Jun 22 06:42:37 ip-10-0-0-8 kernel: Unpacking initramfs...
+Jun 22 06:42:37 ip-10-0-0-8 kernel: Freeing initrd memory: 60352K
+Jun 22 06:42:37 ip-10-0-0-8 kernel: ACPI: bus type thunderbolt registered
+Jun 22 06:42:37 ip-10-0-0-8 kernel: Initialise system trusted keyrings
+Jun 22 06:42:37 ip-10-0-0-8 kernel: Key type blacklist registered
+Jun 22 06:42:37 ip-10-0-0-8 kernel: workingset: timestamp_bits=36 max_order=18 bucket_order=0
+Jun 22 06:42:37 ip-10-0-0-8 kernel: zbud: loaded
+Jun 22 06:42:37 ip-10-0-0-8 kernel: pstore: using deflate compression
+Jun 22 06:42:37 ip-10-0-0-8 kernel: Platform Keyring initialized
+Jun 22 06:42:37 ip-10-0-0-8 kernel: NET: Registered protocol family 38
+Jun 22 06:42:37 ip-10-0-0-8 kernel: Key type asymmetric registered
+Jun 22 06:42:37 ip-10-0-0-8 kernel: Asymmetric key parser 'x509' registered
+Jun 22 06:42:37 ip-10-0-0-8 kernel: Block layer SCSI generic (bsg) driver version 0.4 loaded (major 247)
+Jun 22 06:42:37 ip-10-0-0-8 kernel: io scheduler mq-deadline registered
+Jun 22 06:42:37 ip-10-0-0-8 kernel: io scheduler kyber registered
+Jun 22 06:42:37 ip-10-0-0-8 kernel: io scheduler bfq registered
+Jun 22 06:42:37 ip-10-0-0-8 kernel: atomic64_test: passed for x86-64 platform with CX8 and with SSE
+Jun 22 06:42:37 ip-10-0-0-8 kernel: shpchp: Standard Hot Plug PCI Controller Driver version: 0.4
+Jun 22 06:42:37 ip-10-0-0-8 kernel: input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input0
+Jun 22 06:42:37 ip-10-0-0-8 kernel: ACPI: Power Button [PWRF]
+Jun 22 06:42:37 ip-10-0-0-8 kernel: input: Sleep Button as /devices/LNXSYSTM:00/LNXSLPBN:00/input/input1
+Jun 22 06:42:37 ip-10-0-0-8 kernel: ACPI: Sleep Button [SLPF]
+Jun 22 06:42:37 ip-10-0-0-8 kernel: xen:grant_table: Grant tables using version 1 layout
+Jun 22 06:42:37 ip-10-0-0-8 kernel: Grant table initialized
+Jun 22 06:42:37 ip-10-0-0-8 kernel: Cannot get hvm parameter CONSOLE_EVTCHN (18): -22!
+Jun 22 06:42:37 ip-10-0-0-8 kernel: Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+Jun 22 06:42:37 ip-10-0-0-8 kernel: 00:06: ttyS0 at I/O 0x3f8 (irq = 4, base_baud = 115200) is a 16550A
+Jun 22 06:42:37 ip-10-0-0-8 kernel: Non-volatile memory driver v1.3
+Jun 22 06:42:37 ip-10-0-0-8 kernel: rdac: device handler registered
+Jun 22 06:42:37 ip-10-0-0-8 kernel: hp_sw: device handler registered
+Jun 22 06:42:37 ip-10-0-0-8 kernel: emc: device handler registered
+Jun 22 06:42:37 ip-10-0-0-8 kernel: alua: device handler registered
+Jun 22 06:42:37 ip-10-0-0-8 kernel: libphy: Fixed MDIO Bus: probed
+Jun 22 06:42:37 ip-10-0-0-8 kernel: ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+Jun 22 06:42:37 ip-10-0-0-8 kernel: ehci-pci: EHCI PCI platform driver
+Jun 22 06:42:37 ip-10-0-0-8 kernel: ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+Jun 22 06:42:37 ip-10-0-0-8 kernel: ohci-pci: OHCI PCI platform driver
+Jun 22 06:42:37 ip-10-0-0-8 kernel: uhci_hcd: USB Universal Host Controller Interface driver
+Jun 22 06:42:37 ip-10-0-0-8 kernel: usbcore: registered new interface driver usbserial_generic
+Jun 22 06:42:37 ip-10-0-0-8 kernel: usbserial: USB Serial support registered for generic
+Jun 22 06:42:37 ip-10-0-0-8 kernel: i8042: PNP: PS/2 Controller [PNP0303:PS2K,PNP0f13:PS2M] at 0x60,0x64 irq 1,12
+Jun 22 06:42:37 ip-10-0-0-8 kernel: serio: i8042 KBD port at 0x60,0x64 irq 1
+Jun 22 06:42:37 ip-10-0-0-8 kernel: serio: i8042 AUX port at 0x60,0x64 irq 12
+Jun 22 06:42:37 ip-10-0-0-8 kernel: mousedev: PS/2 mouse device common for all mice
+Jun 22 06:42:37 ip-10-0-0-8 kernel: input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input2
+Jun 22 06:42:37 ip-10-0-0-8 kernel: rtc_cmos 00:02: registered as rtc0
+Jun 22 06:42:37 ip-10-0-0-8 kernel: rtc_cmos 00:02: alarms up to one day, 114 bytes nvram, hpet irqs
+Jun 22 06:42:37 ip-10-0-0-8 kernel: intel_pstate: CPU model not supported
+Jun 22 06:42:37 ip-10-0-0-8 kernel: hid: raw HID events driver (C) Jiri Kosina
+Jun 22 06:42:37 ip-10-0-0-8 kernel: usbcore: registered new interface driver usbhid
+Jun 22 06:42:37 ip-10-0-0-8 kernel: usbhid: USB HID core driver
+Jun 22 06:42:37 ip-10-0-0-8 kernel: drop_monitor: Initializing network drop monitor service
+Jun 22 06:42:37 ip-10-0-0-8 kernel: Initializing XFRM netlink socket
+Jun 22 06:42:37 ip-10-0-0-8 kernel: NET: Registered protocol family 10
+Jun 22 06:42:37 ip-10-0-0-8 kernel: Segment Routing with IPv6
+Jun 22 06:42:37 ip-10-0-0-8 kernel: NET: Registered protocol family 17
+Jun 22 06:42:37 ip-10-0-0-8 kernel: mpls_gso: MPLS GSO support
+Jun 22 06:42:37 ip-10-0-0-8 kernel: resctrl: L3 allocation detected
+Jun 22 06:42:37 ip-10-0-0-8 kernel: AVX2 version of gcm_enc/dec engaged.
+Jun 22 06:42:37 ip-10-0-0-8 kernel: AES CTR mode by8 optimization enabled
+Jun 22 06:42:37 ip-10-0-0-8 kernel: sched_clock: Marking stable (1783007114, 0)->(13317484019, -11534476905)
+Jun 22 06:42:37 ip-10-0-0-8 kernel: registered taskstats version 1
+Jun 22 06:42:37 ip-10-0-0-8 kernel: Loading compiled-in X.509 certificates
+Jun 22 06:42:37 ip-10-0-0-8 kernel: Loaded X.509 cert 'Red Hat Enterprise Linux kernel signing key: fcec8079a12caa6a157125702c0054357b4fc157'
+Jun 22 06:42:37 ip-10-0-0-8 kernel: Loaded X.509 cert 'Red Hat Enterprise Linux Driver Update Program (key 3): bf57f3e87362bc7229d9f465321773dfd1f77a80'
+Jun 22 06:42:37 ip-10-0-0-8 kernel: Loaded X.509 cert 'Red Hat Enterprise Linux kpatch signing key: 4d38fd864ebe18c5f0b72e3852e2014c3a676fc8'
+Jun 22 06:42:37 ip-10-0-0-8 kernel: zswap: loaded using pool lzo/zbud
+Jun 22 06:42:37 ip-10-0-0-8 kernel: page_owner is disabled
+Jun 22 06:42:37 ip-10-0-0-8 kernel: Key type big_key registered
+Jun 22 06:42:37 ip-10-0-0-8 kernel: Key type encrypted registered
+Jun 22 06:42:37 ip-10-0-0-8 kernel: ima: No TPM chip found, activating TPM-bypass!
+Jun 22 06:42:37 ip-10-0-0-8 kernel: ima: Allocated hash algorithm: sha256
+Jun 22 06:42:37 ip-10-0-0-8 kernel: ima: No architecture policies found
+Jun 22 06:42:37 ip-10-0-0-8 kernel: evm: Initialising EVM extended attributes:
+Jun 22 06:42:37 ip-10-0-0-8 kernel: evm: security.selinux
+Jun 22 06:42:37 ip-10-0-0-8 kernel: evm: security.ima
+Jun 22 06:42:37 ip-10-0-0-8 kernel: evm: security.capability
+Jun 22 06:42:37 ip-10-0-0-8 kernel: evm: HMAC attrs: 0x1
+Jun 22 06:42:37 ip-10-0-0-8 kernel: xenbus_probe_frontend: Device with no driver: device/vbd/768
+Jun 22 06:42:37 ip-10-0-0-8 kernel: xenbus_probe_frontend: Device with no driver: device/vif/0
+Jun 22 06:42:37 ip-10-0-0-8 kernel: rtc_cmos 00:02: setting system clock to 2022-06-22 06:42:37 UTC (1655880157)
+Jun 22 06:42:37 ip-10-0-0-8 kernel: Freeing unused decrypted memory: 2036K
+Jun 22 06:42:37 ip-10-0-0-8 kernel: Freeing unused kernel image (initmem) memory: 2520K
+Jun 22 06:42:37 ip-10-0-0-8 kernel: Write protecting the kernel read-only data: 24576k
+Jun 22 06:42:37 ip-10-0-0-8 kernel: Freeing unused kernel image (text/rodata gap) memory: 2012K
+Jun 22 06:42:37 ip-10-0-0-8 kernel: Freeing unused kernel image (rodata/data gap) memory: 1948K
+Jun 22 06:42:37 ip-10-0-0-8 systemd[1]: systemd 239 (239-58.el8) running in system mode. (+PAM +AUDIT +SELINUX +IMA -APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD +IDN2 -IDN +PCRE2 default-hierarchy=legacy)
+Jun 22 06:42:37 ip-10-0-0-8 systemd[1]: Detected virtualization xen.
+Jun 22 06:42:37 ip-10-0-0-8 systemd[1]: Detected architecture x86-64.
+Jun 22 06:42:37 ip-10-0-0-8 systemd[1]: Running in initial RAM disk.
+Jun 22 06:42:37 ip-10-0-0-8 systemd[1]: No hostname configured.
+Jun 22 06:42:37 ip-10-0-0-8 systemd[1]: Set hostname to <localhost>.
+Jun 22 06:42:37 ip-10-0-0-8 systemd[1]: Initializing machine ID from random generator.
+Jun 22 06:42:37 ip-10-0-0-8 systemd[1]: Listening on udev Control Socket.
+Jun 22 06:42:37 ip-10-0-0-8 systemd[1]: Listening on Journal Socket.
+Jun 22 06:42:37 ip-10-0-0-8 systemd[1]: Listening on Journal Socket (/dev/log).
+Jun 22 06:42:37 ip-10-0-0-8 kernel: tsc: Refined TSC clocksource calibration: 2400.015 MHz
+Jun 22 06:42:37 ip-10-0-0-8 kernel: clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x229845c90bd, max_idle_ns: 440795320848 ns
+Jun 22 06:42:37 ip-10-0-0-8 systemd-journald[299]: Journal started
+Jun 22 06:42:37 ip-10-0-0-8 systemd-journald[299]: Runtime journal (/run/log/journal/c34b4bd45cf34605bf0f29d88cd062ad) is 5.0M, max 40.0M, 35.0M free.
+Jun 22 06:42:38 ip-10-0-0-8 kernel: input: ImExPS/2 Generic Explorer Mouse as /devices/platform/i8042/serio1/input/input4
+Jun 22 06:42:38 ip-10-0-0-8 systemd[1]: Started Create list of required static device nodes for the current kernel.
+Jun 22 06:42:38 ip-10-0-0-8 systemd[1]: Started Create Volatile Files and Directories.
+Jun 22 06:42:38 ip-10-0-0-8 systemd[1]: memstrack.service: Succeeded.
+Jun 22 06:42:38 ip-10-0-0-8 systemd[1]: Started Apply Kernel Variables.
+Jun 22 06:42:38 ip-10-0-0-8 systemd[1]: systemd-vconsole-setup.service: Succeeded.
+Jun 22 06:42:38 ip-10-0-0-8 systemd[1]: Started Setup Virtual Console.
+Jun 22 06:42:38 ip-10-0-0-8 systemd[1]: Starting dracut cmdline hook...
+Jun 22 06:42:38 ip-10-0-0-8 systemd[1]: Starting Create Static Device Nodes in /dev...
+Jun 22 06:42:38 ip-10-0-0-8 systemd[1]: Started Create Static Device Nodes in /dev.
+Jun 22 06:42:38 ip-10-0-0-8 dracut-cmdline[315]: dracut-8.6 (Ootpa) dracut-049-201.git20220131.el8
+Jun 22 06:42:38 ip-10-0-0-8 dracut-cmdline[315]: Using kernel command line parameters: BOOT_IMAGE=(hd0,gpt2)/boot/vmlinuz-4.18.0-372.9.1.el8.x86_64 root=UUID=eaa1f38e-de0f-4ed5-a5b5-2fa9db43bb38 console=ttyS0,115200n8 console=tty0 net.ifnames=0 rd.blacklist=nouveau nvme_core.io_timeout=4294967295 crashkernel=auto
+Jun 22 06:42:38 ip-10-0-0-8 systemd[1]: Started dracut cmdline hook.
+Jun 22 06:42:38 ip-10-0-0-8 systemd[1]: Starting dracut pre-udev hook...
+Jun 22 06:42:38 ip-10-0-0-8 kernel: device-mapper: uevent: version 1.0.3
+Jun 22 06:42:38 ip-10-0-0-8 kernel: device-mapper: ioctl: 4.43.0-ioctl (2020-10-01) initialised: dm-devel@redhat.com
+Jun 22 06:42:38 ip-10-0-0-8 systemd[1]: Started dracut pre-udev hook.
+Jun 22 06:42:38 ip-10-0-0-8 systemd[1]: Starting udev Kernel Device Manager...
+Jun 22 06:42:38 ip-10-0-0-8 systemd-udevd[410]: Network interface NamePolicy= disabled on kernel command line, ignoring.
+Jun 22 06:42:38 ip-10-0-0-8 systemd[1]: Started udev Kernel Device Manager.
+Jun 22 06:42:38 ip-10-0-0-8 systemd[1]: Starting udev Coldplug all Devices...
+Jun 22 06:42:38 ip-10-0-0-8 systemd[1]: Mounting Kernel Configuration File System...
+Jun 22 06:42:38 ip-10-0-0-8 systemd[1]: Mounted Kernel Configuration File System.
+Jun 22 06:42:38 ip-10-0-0-8 systemd[1]: Started udev Coldplug all Devices.
+Jun 22 06:42:38 ip-10-0-0-8 systemd[1]: Reached target System Initialization.
+Jun 22 06:42:38 ip-10-0-0-8 systemd[1]: Reached target Basic System.
+Jun 22 06:42:38 ip-10-0-0-8 systemd[1]: Starting dracut initqueue hook...
+Jun 22 06:42:38 ip-10-0-0-8 kernel: Invalid max_queues (4), will use default max: 1.
+Jun 22 06:42:38 ip-10-0-0-8 systemd-udevd[437]: link_config: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Jun 22 06:42:38 ip-10-0-0-8 kernel: xen_netfront: Initialising Xen virtual ethernet driver
+Jun 22 06:42:38 ip-10-0-0-8 kernel: scsi host0: ata_piix
+Jun 22 06:42:38 ip-10-0-0-8 kernel: scsi host1: ata_piix
+Jun 22 06:42:38 ip-10-0-0-8 kernel: ata1: PATA max MWDMA2 cmd 0x1f0 ctl 0x3f6 bmdma 0xc100 irq 14
+Jun 22 06:42:38 ip-10-0-0-8 kernel: ata2: PATA max MWDMA2 cmd 0x170 ctl 0x376 bmdma 0xc108 irq 15
+Jun 22 06:42:38 ip-10-0-0-8 kernel: blkfront: xvda: barrier or flush: disabled; persistent grants: disabled; indirect descriptors: enabled;
+Jun 22 06:42:38 ip-10-0-0-8 kernel: xvda: xvda1 xvda2
+Jun 22 06:42:38 ip-10-0-0-8 systemd-udevd[441]: Using default interface naming scheme 'rhel-8.0'.
+Jun 22 06:42:38 ip-10-0-0-8 systemd-udevd[441]: link_config: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Jun 22 06:42:38 ip-10-0-0-8 systemd[1]: Found device /dev/disk/by-uuid/eaa1f38e-de0f-4ed5-a5b5-2fa9db43bb38.
+Jun 22 06:42:39 ip-10-0-0-8 systemd[1]: Reached target Initrd Root Device.
+Jun 22 06:42:39 ip-10-0-0-8 systemd[1]: Started dracut initqueue hook.
+Jun 22 06:42:39 ip-10-0-0-8 systemd[1]: Starting File System Check on /dev/disk/by-uuid/eaa1f38e-de0f-4ed5-a5b5-2fa9db43bb38...
+Jun 22 06:42:39 ip-10-0-0-8 systemd[1]: Reached target Remote File Systems (Pre).
+Jun 22 06:42:39 ip-10-0-0-8 systemd[1]: Reached target Remote File Systems.
+Jun 22 06:42:39 ip-10-0-0-8 systemd-fsck[482]: /usr/sbin/fsck.xfs: XFS file system.
+Jun 22 06:42:39 ip-10-0-0-8 systemd[1]: Started File System Check on /dev/disk/by-uuid/eaa1f38e-de0f-4ed5-a5b5-2fa9db43bb38.
+Jun 22 06:42:39 ip-10-0-0-8 systemd[1]: Mounting /sysroot...
+Jun 22 06:42:39 ip-10-0-0-8 kernel: SGI XFS with ACLs, security attributes, quota, no debug enabled
+Jun 22 06:42:39 ip-10-0-0-8 kernel: XFS (xvda2): Mounting V5 Filesystem
+Jun 22 06:42:39 ip-10-0-0-8 kernel: XFS (xvda2): Ending clean mount
+Jun 22 06:42:39 ip-10-0-0-8 systemd[1]: Mounted /sysroot.
+Jun 22 06:42:39 ip-10-0-0-8 systemd[1]: Reached target Initrd Root File System.
+Jun 22 06:42:39 ip-10-0-0-8 systemd[1]: Starting Reload Configuration from the Real Root...
+Jun 22 06:42:39 ip-10-0-0-8 systemd[1]: Reloading.
+Jun 22 06:42:39 ip-10-0-0-8 systemd[1]: initrd-parse-etc.service: Succeeded.
+Jun 22 06:42:39 ip-10-0-0-8 systemd[1]: Started Reload Configuration from the Real Root.
+Jun 22 06:42:39 ip-10-0-0-8 systemd[1]: Reached target Initrd File Systems.
+Jun 22 06:42:39 ip-10-0-0-8 systemd[1]: Reached target Initrd Default Target.
+Jun 22 06:42:39 ip-10-0-0-8 systemd[1]: Starting dracut mount hook...
+Jun 22 06:42:39 ip-10-0-0-8 systemd[1]: Started dracut mount hook.
+Jun 22 06:42:40 ip-10-0-0-8 systemd[1]: Starting dracut pre-pivot and cleanup hook...
+Jun 22 06:42:40 ip-10-0-0-8 systemd[1]: Started dracut pre-pivot and cleanup hook.
+Jun 22 06:42:40 ip-10-0-0-8 systemd[1]: Starting Cleaning Up and Shutting Down Daemons...
+Jun 22 06:42:40 ip-10-0-0-8 systemd[1]: Stopped target Timers.
+Jun 22 06:42:40 ip-10-0-0-8 systemd[1]: dracut-pre-pivot.service: Succeeded.
+Jun 22 06:42:40 ip-10-0-0-8 systemd[1]: Stopped dracut pre-pivot and cleanup hook.
+Jun 22 06:42:40 ip-10-0-0-8 systemd[1]: Stopped target Remote File Systems.
+Jun 22 06:42:40 ip-10-0-0-8 systemd[1]: Stopped target Remote File Systems (Pre).
+Jun 22 06:42:40 ip-10-0-0-8 systemd[1]: Stopped target Initrd Default Target.
+Jun 22 06:42:40 ip-10-0-0-8 systemd[1]: Stopped target Basic System.
+Jun 22 06:42:40 ip-10-0-0-8 systemd[1]: Stopped target Slices.
+Jun 22 06:42:40 ip-10-0-0-8 systemd[1]: Stopped target Sockets.
+Jun 22 06:42:40 ip-10-0-0-8 systemd[1]: dracut-mount.service: Succeeded.
+Jun 22 06:42:40 ip-10-0-0-8 systemd[1]: Stopped dracut mount hook.
+Jun 22 06:42:40 ip-10-0-0-8 systemd[1]: dracut-initqueue.service: Succeeded.
+Jun 22 06:42:40 ip-10-0-0-8 systemd[1]: Stopped dracut initqueue hook.
+Jun 22 06:42:40 ip-10-0-0-8 systemd[1]: Stopped target Paths.
+Jun 22 06:42:40 ip-10-0-0-8 systemd[1]: Stopped target System Initialization.
+Jun 22 06:42:40 ip-10-0-0-8 systemd[1]: systemd-sysctl.service: Succeeded.
+Jun 22 06:42:40 ip-10-0-0-8 systemd[1]: Stopped Apply Kernel Variables.
+Jun 22 06:42:40 ip-10-0-0-8 systemd[1]: systemd-tmpfiles-setup.service: Succeeded.
+Jun 22 06:42:40 ip-10-0-0-8 systemd[1]: Stopped Create Volatile Files and Directories.
+Jun 22 06:42:40 ip-10-0-0-8 systemd[1]: systemd-udev-trigger.service: Succeeded.
+Jun 22 06:42:40 ip-10-0-0-8 systemd[1]: Stopped udev Coldplug all Devices.
+Jun 22 06:42:40 ip-10-0-0-8 systemd[1]: Stopped target Local Encrypted Volumes.
+Jun 22 06:42:40 ip-10-0-0-8 systemd[1]: systemd-ask-password-console.path: Succeeded.
+Jun 22 06:42:40 ip-10-0-0-8 systemd[1]: Stopped Dispatch Password Requests to Console Directory Watch.
+Jun 22 06:42:40 ip-10-0-0-8 systemd[1]: Stopped target Swap.
+Jun 22 06:42:40 ip-10-0-0-8 systemd[1]: Stopping udev Kernel Device Manager...
+Jun 22 06:42:40 ip-10-0-0-8 systemd[1]: Stopped target Local File Systems.
+Jun 22 06:42:40 ip-10-0-0-8 systemd[1]: Stopped target Initrd Root Device.
+Jun 22 06:42:40 ip-10-0-0-8 systemd[1]: systemd-udevd.service: Succeeded.
+Jun 22 06:42:40 ip-10-0-0-8 systemd[1]: Stopped udev Kernel Device Manager.
+Jun 22 06:42:40 ip-10-0-0-8 systemd[1]: initrd-cleanup.service: Succeeded.
+Jun 22 06:42:40 ip-10-0-0-8 systemd[1]: Started Cleaning Up and Shutting Down Daemons.
+Jun 22 06:42:40 ip-10-0-0-8 systemd[1]: systemd-tmpfiles-setup-dev.service: Succeeded.
+Jun 22 06:42:40 ip-10-0-0-8 systemd[1]: Stopped Create Static Device Nodes in /dev.
+Jun 22 06:42:40 ip-10-0-0-8 systemd[1]: kmod-static-nodes.service: Succeeded.
+Jun 22 06:42:40 ip-10-0-0-8 systemd[1]: Stopped Create list of required static device nodes for the current kernel.
+Jun 22 06:42:40 ip-10-0-0-8 systemd[1]: dracut-pre-udev.service: Succeeded.
+Jun 22 06:42:40 ip-10-0-0-8 systemd[1]: Stopped dracut pre-udev hook.
+Jun 22 06:42:40 ip-10-0-0-8 systemd[1]: dracut-cmdline.service: Succeeded.
+Jun 22 06:42:40 ip-10-0-0-8 systemd[1]: Stopped dracut cmdline hook.
+Jun 22 06:42:40 ip-10-0-0-8 systemd[1]: systemd-udevd-kernel.socket: Succeeded.
+Jun 22 06:42:40 ip-10-0-0-8 systemd[1]: Closed udev Kernel Socket.
+Jun 22 06:42:40 ip-10-0-0-8 systemd[1]: systemd-udevd-control.socket: Succeeded.
+Jun 22 06:42:40 ip-10-0-0-8 systemd[1]: Closed udev Control Socket.
+Jun 22 06:42:40 ip-10-0-0-8 systemd[1]: Starting Cleanup udevd DB...
+Jun 22 06:42:40 ip-10-0-0-8 systemd[1]: initrd-udevadm-cleanup-db.service: Succeeded.
+Jun 22 06:42:40 ip-10-0-0-8 systemd[1]: Started Cleanup udevd DB.
+Jun 22 06:42:40 ip-10-0-0-8 systemd[1]: Reached target Switch Root.
+Jun 22 06:42:40 ip-10-0-0-8 systemd[1]: Starting Switch Root...
+Jun 22 06:42:40 ip-10-0-0-8 systemd[1]: Switching root.
+Jun 22 06:42:40 ip-10-0-0-8 systemd-journald[299]: Journal stopped
+Jun 22 06:42:41 ip-10-0-0-8 kernel: printk: systemd: 16 output lines suppressed due to ratelimiting
+Jun 22 06:42:41 ip-10-0-0-8 kernel: audit: type=1404 audit(1655880160.722:2): enforcing=1 old_enforcing=0 auid=4294967295 ses=4294967295 enabled=1 old-enabled=1 lsm=selinux res=1
+Jun 22 06:42:41 ip-10-0-0-8 kernel: SELinux:  policy capability network_peer_controls=1
+Jun 22 06:42:41 ip-10-0-0-8 kernel: SELinux:  policy capability open_perms=1
+Jun 22 06:42:41 ip-10-0-0-8 kernel: SELinux:  policy capability extended_socket_class=1
+Jun 22 06:42:41 ip-10-0-0-8 kernel: SELinux:  policy capability always_check_network=0
+Jun 22 06:42:41 ip-10-0-0-8 kernel: SELinux:  policy capability cgroup_seclabel=1
+Jun 22 06:42:41 ip-10-0-0-8 kernel: SELinux:  policy capability nnp_nosuid_transition=1
+Jun 22 06:42:41 ip-10-0-0-8 kernel: audit: type=1403 audit(1655880161.024:3): auid=4294967295 ses=4294967295 lsm=selinux res=1
+Jun 22 06:42:41 ip-10-0-0-8 systemd[1]: Successfully loaded SELinux policy in 321.285ms.
+Jun 22 06:42:41 ip-10-0-0-8 systemd[1]: Relabelled /dev, /run and /sys/fs/cgroup in 21.627ms.
+Jun 22 06:42:41 ip-10-0-0-8 systemd[1]: systemd 239 (239-58.el8) running in system mode. (+PAM +AUDIT +SELINUX +IMA -APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD +IDN2 -IDN +PCRE2 default-hierarchy=legacy)
+Jun 22 06:42:41 ip-10-0-0-8 systemd[1]: Detected virtualization xen.
+Jun 22 06:42:41 ip-10-0-0-8 systemd[1]: Detected architecture x86-64.
+Jun 22 06:42:41 ip-10-0-0-8 systemd[1]: Initializing machine ID from random generator.
+Jun 22 06:42:41 ip-10-0-0-8 systemd[1]: Installed transient /etc/machine-id file.
+Jun 22 06:42:41 ip-10-0-0-8 systemd[1]: systemd-journald.service: Succeeded.
+Jun 22 06:42:41 ip-10-0-0-8 systemd[1]: initrd-switch-root.service: Succeeded.
+Jun 22 06:42:41 ip-10-0-0-8 systemd[1]: Stopped Switch Root.
+Jun 22 06:42:41 ip-10-0-0-8 systemd[1]: systemd-journald.service: Service has no hold-off time (RestartSec=0), scheduling restart.
+Jun 22 06:42:41 ip-10-0-0-8 systemd[1]: systemd-journald.service: Scheduled restart job, restart counter is at 1.
+Jun 22 06:42:41 ip-10-0-0-8 systemd-journald[600]: Journal started
+Jun 22 06:42:41 ip-10-0-0-8 systemd-journald[600]: Runtime journal (/run/log/journal/1b234bf256d24bab933eb1993116c030) is 5.0M, max 40.0M, 35.0M free.
+Jun 22 06:42:41 ip-10-0-0-8 systemd[1]: Mounted Huge Pages File System.
+Jun 22 06:42:41 ip-10-0-0-8 systemd[1]: Started Read and set NIS domainname from /etc/sysconfig/network.
+Jun 22 06:42:41 ip-10-0-0-8 systemd[1]: Started Apply Kernel Variables.
+Jun 22 06:42:41 ip-10-0-0-8 systemd[1]: Started Remount Root and Kernel File Systems.
+Jun 22 06:42:41 ip-10-0-0-8 systemd[1]: Mounted Kernel Debug File System.
+Jun 22 06:42:41 ip-10-0-0-8 systemd[1]: Started Create list of required static device nodes for the current kernel.
+Jun 22 06:42:41 ip-10-0-0-8 systemd[1]: Mounted POSIX Message Queue File System.
+Jun 22 06:42:41 ip-10-0-0-8 systemd[1]: Starting Load/Save Random Seed...
+Jun 22 06:42:41 ip-10-0-0-8 systemd[1]: Starting Rebuild Hardware Database...
+Jun 22 06:42:41 ip-10-0-0-8 systemd[1]: Starting Create System Users...
+Jun 22 06:42:41 ip-10-0-0-8 systemd[1]: Starting Flush Journal to Persistent Storage...
+Jun 22 06:42:41 ip-10-0-0-8 systemd[1]: Started Load/Save Random Seed.
+Jun 22 06:42:41 ip-10-0-0-8 systemd-journald[600]: Runtime journal (/run/log/journal/1b234bf256d24bab933eb1993116c030) is 5.0M, max 40.0M, 35.0M free.
+Jun 22 06:42:41 ip-10-0-0-8 systemd[1]: Started Flush Journal to Persistent Storage.
+Jun 22 06:42:42 ip-10-0-0-8 systemd[1]: Started Create System Users.
+Jun 22 06:42:42 ip-10-0-0-8 systemd[1]: Starting Create Static Device Nodes in /dev...
+Jun 22 06:42:42 ip-10-0-0-8 systemd[1]: Started udev Coldplug all Devices.
+Jun 22 06:42:42 ip-10-0-0-8 systemd[1]: Started Create Static Device Nodes in /dev.
+Jun 22 06:42:42 ip-10-0-0-8 systemd[1]: Reached target Local File Systems (Pre).
+Jun 22 06:42:42 ip-10-0-0-8 systemd[1]: Reached target Local File Systems.
+Jun 22 06:42:42 ip-10-0-0-8 systemd[1]: Starting Commit a transient machine-id on disk...
+Jun 22 06:42:42 ip-10-0-0-8 systemd[1]: Starting Import network configuration from initramfs...
+Jun 22 06:42:42 ip-10-0-0-8 systemd[1]: Starting Restore /run/initramfs on shutdown...
+Jun 22 06:42:42 ip-10-0-0-8 systemd[1]: Starting Rebuild Dynamic Linker Cache...
+Jun 22 06:42:42 ip-10-0-0-8 systemd[1]: Starting Rebuild Journal Catalog...
+Jun 22 06:42:42 ip-10-0-0-8 systemd[1]: Started Restore /run/initramfs on shutdown.
+Jun 22 06:42:42 ip-10-0-0-8 systemd[1]: etc-machine\x2did.mount: Succeeded.
+Jun 22 06:42:42 ip-10-0-0-8 systemd[1]: Started Commit a transient machine-id on disk.
+Jun 22 06:42:42 ip-10-0-0-8 systemd[1]: Started Rebuild Journal Catalog.
+Jun 22 06:42:42 ip-10-0-0-8 systemd[1]: Started Import network configuration from initramfs.
+Jun 22 06:42:42 ip-10-0-0-8 systemd[1]: Starting Create Volatile Files and Directories...
+Jun 22 06:42:42 ip-10-0-0-8 systemd[1]: Started Create Volatile Files and Directories.
+Jun 22 06:42:42 ip-10-0-0-8 systemd[1]: Starting Security Auditing Service...
+Jun 22 06:42:42 ip-10-0-0-8 auditd[653]: No plugins found, not dispatching events
+Jun 22 06:42:42 ip-10-0-0-8 auditd[653]: Init complete, auditd 3.0.7 listening for events (startup state enable)
+Jun 22 06:42:42 ip-10-0-0-8 systemd[1]: Started Rebuild Dynamic Linker Cache.
+Jun 22 06:42:42 ip-10-0-0-8 augenrules[670]: No rules
+Jun 22 06:42:42 ip-10-0-0-8 augenrules[670]: enabled 1
+Jun 22 06:42:42 ip-10-0-0-8 augenrules[670]: failure 1
+Jun 22 06:42:42 ip-10-0-0-8 augenrules[670]: pid 653
+Jun 22 06:42:42 ip-10-0-0-8 augenrules[670]: rate_limit 0
+Jun 22 06:42:42 ip-10-0-0-8 augenrules[670]: backlog_limit 8192
+Jun 22 06:42:42 ip-10-0-0-8 augenrules[670]: lost 0
+Jun 22 06:42:42 ip-10-0-0-8 augenrules[670]: backlog 4
+Jun 22 06:42:42 ip-10-0-0-8 augenrules[670]: backlog_wait_time 60000
+Jun 22 06:42:42 ip-10-0-0-8 augenrules[670]: backlog_wait_time_actual 0
+Jun 22 06:42:42 ip-10-0-0-8 augenrules[670]: enabled 1
+Jun 22 06:42:42 ip-10-0-0-8 augenrules[670]: failure 1
+Jun 22 06:42:42 ip-10-0-0-8 augenrules[670]: pid 653
+Jun 22 06:42:42 ip-10-0-0-8 augenrules[670]: rate_limit 0
+Jun 22 06:42:42 ip-10-0-0-8 augenrules[670]: backlog_limit 8192
+Jun 22 06:42:42 ip-10-0-0-8 augenrules[670]: lost 0
+Jun 22 06:42:42 ip-10-0-0-8 augenrules[670]: backlog 4
+Jun 22 06:42:42 ip-10-0-0-8 augenrules[670]: backlog_wait_time 60000
+Jun 22 06:42:42 ip-10-0-0-8 augenrules[670]: backlog_wait_time_actual 0
+Jun 22 06:42:42 ip-10-0-0-8 augenrules[670]: enabled 1
+Jun 22 06:42:42 ip-10-0-0-8 augenrules[670]: failure 1
+Jun 22 06:42:42 ip-10-0-0-8 augenrules[670]: pid 653
+Jun 22 06:42:42 ip-10-0-0-8 augenrules[670]: rate_limit 0
+Jun 22 06:42:42 ip-10-0-0-8 augenrules[670]: backlog_limit 8192
+Jun 22 06:42:42 ip-10-0-0-8 augenrules[670]: lost 0
+Jun 22 06:42:42 ip-10-0-0-8 augenrules[670]: backlog 4
+Jun 22 06:42:42 ip-10-0-0-8 augenrules[670]: backlog_wait_time 60000
+Jun 22 06:42:42 ip-10-0-0-8 augenrules[670]: backlog_wait_time_actual 0
+Jun 22 06:42:42 ip-10-0-0-8 systemd[1]: Started Security Auditing Service.
+Jun 22 06:42:42 ip-10-0-0-8 systemd[1]: Starting Update UTMP about System Boot/Shutdown...
+Jun 22 06:42:42 ip-10-0-0-8 systemd[1]: Started Update UTMP about System Boot/Shutdown.
+Jun 22 06:42:42 ip-10-0-0-8 systemd[1]: Started Rebuild Hardware Database.
+Jun 22 06:42:42 ip-10-0-0-8 systemd[1]: Starting udev Kernel Device Manager...
+Jun 22 06:42:42 ip-10-0-0-8 systemd[1]: Starting Update is Completed...
+Jun 22 06:42:42 ip-10-0-0-8 systemd[1]: Started Update is Completed.
+Jun 22 06:42:42 ip-10-0-0-8 systemd-udevd[680]: Network interface NamePolicy= disabled on kernel command line, ignoring.
+Jun 22 06:42:42 ip-10-0-0-8 systemd[1]: Started udev Kernel Device Manager.
+Jun 22 06:42:42 ip-10-0-0-8 systemd[1]: Reached target System Initialization.
+Jun 22 06:42:42 ip-10-0-0-8 systemd[1]: Listening on D-Bus System Message Bus Socket.
+Jun 22 06:42:42 ip-10-0-0-8 systemd[1]: Starting Initial cloud-init job (pre-networking)...
+Jun 22 06:42:42 ip-10-0-0-8 systemd[1]: Started Periodically run nm-cloud-setup.
+Jun 22 06:42:42 ip-10-0-0-8 systemd[1]: Started Daily Cleanup of Temporary Directories.
+Jun 22 06:42:42 ip-10-0-0-8 systemd[1]: Started daily update of the root trust anchor for DNSSEC.
+Jun 22 06:42:42 ip-10-0-0-8 systemd[1]: Listening on SSSD Kerberos Cache Manager responder socket.
+Jun 22 06:42:42 ip-10-0-0-8 systemd[1]: Reached target Sockets.
+Jun 22 06:42:42 ip-10-0-0-8 systemd[1]: Reached target Basic System.
+Jun 22 06:42:42 ip-10-0-0-8 systemd[1]: Starting OpenSSH rsa Server Key Generation...
+Jun 22 06:42:42 ip-10-0-0-8 systemd[1]: Started irqbalance daemon.
+Jun 22 06:42:42 ip-10-0-0-8 systemd[1]: Starting System Security Services Daemon...
+Jun 22 06:42:42 ip-10-0-0-8 systemd[1]: Started D-Bus System Message Bus.
+Jun 22 06:42:42 ip-10-0-0-8 systemd[1]: Starting Authorization Manager...
+Jun 22 06:42:42 ip-10-0-0-8 systemd[1]: Starting OpenSSH ecdsa Server Key Generation...
+Jun 22 06:42:42 ip-10-0-0-8 systemd[1]: Starting OpenSSH ed25519 Server Key Generation...
+Jun 22 06:42:42 ip-10-0-0-8 /usr/sbin/irqbalance[705]: Balancing is ineffective on systems with a single cpu.  Shutting down
+Jun 22 06:42:42 ip-10-0-0-8 systemd[1]: Starting NTP client/server...
+Jun 22 06:42:42 ip-10-0-0-8 systemd[1]: Starting SYSV: Firstboot runs the first time a cloud instance is booted after installation.  It checks for the existance of an /etc/sysconfig/rh-cloud-firstboot file.  If the file exists and contains RUN_FIRSTBOOT=NO, firstboot will not run.  Otherwise rh-cloud-firstboot will be run....
+Jun 22 06:42:42 ip-10-0-0-8 systemd[1]: Started dnf makecache --timer.
+Jun 22 06:42:43 ip-10-0-0-8 systemd[1]: Reached target Timers.
+Jun 22 06:42:43 ip-10-0-0-8 systemd[1]: irqbalance.service: Succeeded.
+Jun 22 06:42:43 ip-10-0-0-8 polkitd[711]: Started polkitd version 0.115
+Jun 22 06:42:43 ip-10-0-0-8 chronyd[735]: chronyd version 4.1 starting (+CMDMON +NTP +REFCLOCK +RTC +PRIVDROP +SCFILTER +SIGND +ASYNCDNS +NTS +SECHASH +IPV6 +DEBUG)
+Jun 22 06:42:43 ip-10-0-0-8 sssd[706]: Starting up
+Jun 22 06:42:43 ip-10-0-0-8 systemd[1]: Started NTP client/server.
+Jun 22 06:42:43 ip-10-0-0-8 systemd[1]: Started Authorization Manager.
+Jun 22 06:42:43 ip-10-0-0-8 sssd_be[751]: Starting up
+Jun 22 06:42:43 ip-10-0-0-8 systemd[1]: sshd-keygen@ecdsa.service: Succeeded.
+Jun 22 06:42:43 ip-10-0-0-8 systemd[1]: Started OpenSSH ecdsa Server Key Generation.
+Jun 22 06:42:43 ip-10-0-0-8 systemd[1]: sshd-keygen@ed25519.service: Succeeded.
+Jun 22 06:42:43 ip-10-0-0-8 systemd[1]: Started OpenSSH ed25519 Server Key Generation.
+Jun 22 06:42:43 ip-10-0-0-8 sssd_nss[764]: Starting up
+Jun 22 06:42:43 ip-10-0-0-8 rh-cloud-firstboot[716]: [  OK  ]
+Jun 22 06:42:43 ip-10-0-0-8 systemd[1]: Reloading.
+Jun 22 06:42:43 ip-10-0-0-8 systemd[1]: Started SYSV: Firstboot runs the first time a cloud instance is booted after installation.  It checks for the existance of an /etc/sysconfig/rh-cloud-firstboot file.  If the file exists and contains RUN_FIRSTBOOT=NO, firstboot will not run.  Otherwise rh-cloud-firstboot will be run..
+Jun 22 06:42:43 ip-10-0-0-8 systemd[1]: Started System Security Services Daemon.
+Jun 22 06:42:43 ip-10-0-0-8 systemd[1]: Reached target User and Group Name Lookups.
+Jun 22 06:42:43 ip-10-0-0-8 systemd[1]: Starting Login Service...
+Jun 22 06:42:44 ip-10-0-0-8 systemd-logind[794]: Watching system buttons on /dev/input/event0 (Power Button)
+Jun 22 06:42:44 ip-10-0-0-8 systemd-logind[794]: Watching system buttons on /dev/input/event1 (Sleep Button)
+Jun 22 06:42:44 ip-10-0-0-8 systemd-logind[794]: New seat seat0.
+Jun 22 06:42:44 ip-10-0-0-8 systemd[1]: Started Login Service.
+Jun 22 06:42:44 ip-10-0-0-8 kernel: piix4_smbus 0000:00:01.3: SMBus base address uninitialized - upgrade BIOS or use force_addr=0xaddr
+Jun 22 06:42:44 ip-10-0-0-8 kernel: input: PC Speaker as /devices/platform/pcspkr/input/input5
+Jun 22 06:42:44 ip-10-0-0-8 systemd-logind[794]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+Jun 22 06:42:44 ip-10-0-0-8 systemd-udevd[760]: link_config: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Jun 22 06:42:44 ip-10-0-0-8 systemd-udevd[759]: Using default interface naming scheme 'rhel-8.0'.
+Jun 22 06:42:44 ip-10-0-0-8 systemd-udevd[759]: link_config: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Jun 22 06:42:44 ip-10-0-0-8 kernel: RAPL PMU: API unit is 2^-32 Joules, 0 fixed counters, 655360 ms ovfl timer
+Jun 22 06:42:44 ip-10-0-0-8 systemd[1]: sshd-keygen@rsa.service: Succeeded.
+Jun 22 06:42:44 ip-10-0-0-8 systemd[1]: Started OpenSSH rsa Server Key Generation.
+Jun 22 06:42:44 ip-10-0-0-8 systemd[1]: Reached target sshd-keygen.target.
+Jun 22 06:42:44 ip-10-0-0-8 kernel: EDAC sbridge:  Ver: 1.1.2 
+Jun 22 06:42:44 ip-10-0-0-8 kernel: cirrus 0000:00:02.0: vgaarb: deactivate vga console
+Jun 22 06:42:44 ip-10-0-0-8 kernel: Console: switching to colour dummy device 80x25
+Jun 22 06:42:44 ip-10-0-0-8 kernel: [drm] Initialized cirrus 2.0.0 2019 for 0000:00:02.0 on minor 0
+Jun 22 06:42:44 ip-10-0-0-8 kernel: fbcon: cirrusdrmfb (fb0) is primary device
+Jun 22 06:42:44 ip-10-0-0-8 kernel: Console: switching to colour frame buffer device 128x48
+Jun 22 06:42:44 ip-10-0-0-8 kernel: cirrus 0000:00:02.0: [drm] fb0: cirrusdrmfb frame buffer device
+Jun 22 06:42:45 ip-10-0-0-8 dhclient[821]: Internet Systems Consortium DHCP Client 4.3.6
+Jun 22 06:42:45 ip-10-0-0-8 dhclient[821]: Copyright 2004-2017 Internet Systems Consortium.
+Jun 22 06:42:45 ip-10-0-0-8 dhclient[821]: All rights reserved.
+Jun 22 06:42:45 ip-10-0-0-8 dhclient[821]: For info, please visit https://www.isc.org/software/dhcp/
+Jun 22 06:42:45 ip-10-0-0-8 dhclient[821]: 
+Jun 22 06:42:45 ip-10-0-0-8 dhclient[821]: Listening on LPF/eth0/02:56:5e:f9:4b:ee
+Jun 22 06:42:45 ip-10-0-0-8 dhclient[821]: Sending on   LPF/eth0/02:56:5e:f9:4b:ee
+Jun 22 06:42:45 ip-10-0-0-8 dhclient[821]: Sending on   Socket/fallback
+Jun 22 06:42:45 ip-10-0-0-8 dhclient[821]: Created duid "\000\004\033#K\362V\322K\253\223>\261\2311\026\3000".
+Jun 22 06:42:45 ip-10-0-0-8 dhclient[821]: DHCPDISCOVER on eth0 to 255.255.255.255 port 67 interval 4 (xid=0xc40e8930)
+Jun 22 06:42:45 ip-10-0-0-8 dhclient[821]: DHCPREQUEST on eth0 to 255.255.255.255 port 67 (xid=0xc40e8930)
+Jun 22 06:42:45 ip-10-0-0-8 dhclient[821]: DHCPOFFER from 10.0.0.1
+Jun 22 06:42:45 ip-10-0-0-8 dhclient[821]: DHCPACK from 10.0.0.1 (xid=0xc40e8930)
+Jun 22 06:42:45 ip-10-0-0-8 dhclient[821]: bound to 10.0.0.8 -- renewal in 1570 seconds.
+Jun 22 06:42:45 ip-10-0-0-8 dbus-daemon[709]: [system] Activating via systemd: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service' requested by ':1.6' (uid=0 pid=834 comm="hostnamectl set-hostname ip-10-0-0-8.ap-south-1.co" label="system_u:system_r:cloud_init_t:s0")
+Jun 22 06:42:45 ip-10-0-0-8 systemd[1]: Starting Hostname Service...
+Jun 22 06:42:45 ip-10-0-0-8 dbus-daemon[709]: [system] Successfully activated service 'org.freedesktop.hostname1'
+Jun 22 06:42:45 ip-10-0-0-8 systemd[1]: Started Hostname Service.
+Jun 22 06:42:45 ip-10-0-0-8 systemd-hostnamed[835]: Changed static host name to 'ip-10-0-0-8.ap-south-1.compute.internal'
+Jun 22 06:42:45 ip-10-0-0-8 systemd-hostnamed[835]: Changed host name to 'ip-10-0-0-8.ap-south-1.compute.internal'
+Jun 22 06:42:45 ip-10-0-0-8 cloud-init[819]: Cloud-init v. 21.1-15.el8 running 'init-local' at Wed, 22 Jun 2022 06:42:45 +0000. Up 9.47 seconds.
+Jun 22 06:42:45 ip-10-0-0-8 systemd[1]: Started Initial cloud-init job (pre-networking).
+Jun 22 06:42:45 ip-10-0-0-8 systemd[1]: Reached target Network (Pre).
+Jun 22 06:42:45 ip-10-0-0-8 systemd[1]: Starting Network Manager...
+Jun 22 06:42:45 ip-10-0-0-8 NetworkManager[842]: <info>  [1655880165.7365] NetworkManager (version 1.36.0-4.el8) is starting... (for the first time)
+Jun 22 06:42:45 ip-10-0-0-8 NetworkManager[842]: <info>  [1655880165.7373] Read config: /etc/NetworkManager/NetworkManager.conf
+Jun 22 06:42:45 ip-10-0-0-8 systemd[1]: Started Network Manager.
+Jun 22 06:42:45 ip-10-0-0-8 systemd[1]: Reached target Network.
+Jun 22 06:42:45 ip-10-0-0-8 systemd[1]: Starting Dynamic System Tuning Daemon...
+Jun 22 06:42:45 ip-10-0-0-8 systemd[1]: Starting Enable periodic update of entitlement certificates....
+Jun 22 06:42:45 ip-10-0-0-8 NetworkManager[842]: <info>  [1655880165.7462] bus-manager: acquired D-Bus service "org.freedesktop.NetworkManager"
+Jun 22 06:42:45 ip-10-0-0-8 systemd[1]: Starting Automatically configure NetworkManager in cloud...
+Jun 22 06:42:45 ip-10-0-0-8 systemd[1]: Starting Network Manager Wait Online...
+Jun 22 06:42:45 ip-10-0-0-8 systemd[1]: Started Enable periodic update of entitlement certificates..
+Jun 22 06:42:45 ip-10-0-0-8 NetworkManager[842]: <info>  [1655880165.7824] manager[0x556fab1cf000]: monitoring kernel firmware directory '/lib/firmware'.
+Jun 22 06:42:45 ip-10-0-0-8 NetworkManager[842]: <info>  [1655880165.7898] hostname: hostname: using hostnamed
+Jun 22 06:42:45 ip-10-0-0-8 NetworkManager[842]: <info>  [1655880165.7899] hostname: static hostname changed from (none) to "ip-10-0-0-8.ap-south-1.compute.internal"
+Jun 22 06:42:45 ip-10-0-0-8 NetworkManager[842]: <info>  [1655880165.7943] dns-mgr[0x556fab1ab250]: init: dns=default,systemd-resolved rc-manager=symlink
+Jun 22 06:42:45 ip-10-0-0-8 NetworkManager[842]: <info>  [1655880165.8102] Loaded device plugin: NMTeamFactory (/usr/lib64/NetworkManager/1.36.0-4.el8/libnm-device-plugin-team.so)
+Jun 22 06:42:45 ip-10-0-0-8 NetworkManager[842]: <info>  [1655880165.8104] manager: rfkill: Wi-Fi enabled by radio killswitch; enabled by state file
+Jun 22 06:42:45 ip-10-0-0-8 NetworkManager[842]: <info>  [1655880165.8108] manager: rfkill: WWAN enabled by radio killswitch; enabled by state file
+Jun 22 06:42:45 ip-10-0-0-8 NetworkManager[842]: <info>  [1655880165.8112] manager: Networking is enabled by state file
+Jun 22 06:42:45 ip-10-0-0-8 dbus-daemon[709]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service' requested by ':1.8' (uid=0 pid=842 comm="/usr/sbin/NetworkManager --no-daemon " label="system_u:system_r:NetworkManager_t:s0")
+Jun 22 06:42:45 ip-10-0-0-8 systemd[1]: Starting Network Manager Script Dispatcher Service...
+Jun 22 06:42:45 ip-10-0-0-8 NetworkManager[842]: <info>  [1655880165.8237] settings: Loaded settings plugin: ifcfg-rh ("/usr/lib64/NetworkManager/1.36.0-4.el8/libnm-settings-plugin-ifcfg-rh.so")
+Jun 22 06:42:45 ip-10-0-0-8 NetworkManager[842]: <info>  [1655880165.8239] settings: Loaded settings plugin: keyfile (internal)
+Jun 22 06:42:45 ip-10-0-0-8 NetworkManager[842]: <info>  [1655880165.8338] dhcp-init: Using DHCP client 'internal'
+Jun 22 06:42:45 ip-10-0-0-8 NetworkManager[842]: <info>  [1655880165.8340] device (lo): carrier: link connected
+Jun 22 06:42:45 ip-10-0-0-8 NetworkManager[842]: <info>  [1655880165.8366] manager: (lo): new Generic device (/org/freedesktop/NetworkManager/Devices/1)
+Jun 22 06:42:45 ip-10-0-0-8 dbus-daemon[709]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+Jun 22 06:42:45 ip-10-0-0-8 systemd[1]: Started Network Manager Script Dispatcher Service.
+Jun 22 06:42:45 ip-10-0-0-8 NetworkManager[842]: <info>  [1655880165.8452] manager: (eth0): new Ethernet device (/org/freedesktop/NetworkManager/Devices/2)
+Jun 22 06:42:45 ip-10-0-0-8 NetworkManager[842]: <info>  [1655880165.8497] device (eth0): state change: unmanaged -> unavailable (reason 'managed', sys-iface-state: 'external')
+Jun 22 06:42:45 ip-10-0-0-8 kernel: IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+Jun 22 06:42:45 ip-10-0-0-8 NetworkManager[842]: <info>  [1655880165.8796] device (eth0): carrier: link connected
+Jun 22 06:42:45 ip-10-0-0-8 NetworkManager[842]: <info>  [1655880165.9040] device (eth0): state change: unavailable -> disconnected (reason 'none', sys-iface-state: 'managed')
+Jun 22 06:42:45 ip-10-0-0-8 NetworkManager[842]: <info>  [1655880165.9078] policy: auto-activating connection 'System eth0' (5fb06bd0-0bb0-7ffb-45f1-d6edd65f3e03)
+Jun 22 06:42:45 ip-10-0-0-8 NetworkManager[842]: <info>  [1655880165.9116] device (eth0): Activation: starting connection 'System eth0' (5fb06bd0-0bb0-7ffb-45f1-d6edd65f3e03)
+Jun 22 06:42:45 ip-10-0-0-8 NetworkManager[842]: <info>  [1655880165.9126] device (eth0): state change: disconnected -> prepare (reason 'none', sys-iface-state: 'managed')
+Jun 22 06:42:45 ip-10-0-0-8 NetworkManager[842]: <info>  [1655880165.9166] manager: NetworkManager state is now CONNECTING
+Jun 22 06:42:45 ip-10-0-0-8 NetworkManager[842]: <info>  [1655880165.9179] device (eth0): state change: prepare -> config (reason 'none', sys-iface-state: 'managed')
+Jun 22 06:42:45 ip-10-0-0-8 NetworkManager[842]: <info>  [1655880165.9226] device (eth0): state change: config -> ip-config (reason 'none', sys-iface-state: 'managed')
+Jun 22 06:42:45 ip-10-0-0-8 NetworkManager[842]: <info>  [1655880165.9246] dhcp4 (eth0): activation: beginning transaction (timeout in 45 seconds)
+Jun 22 06:42:45 ip-10-0-0-8 NetworkManager[842]: <info>  [1655880165.9348] dhcp4 (eth0): state changed new lease, address=10.0.0.8
+Jun 22 06:42:45 ip-10-0-0-8 NetworkManager[842]: <info>  [1655880165.9456] device (eth0): state change: ip-config -> ip-check (reason 'none', sys-iface-state: 'managed')
+Jun 22 06:42:45 ip-10-0-0-8 NetworkManager[842]: <info>  [1655880165.9518] device (eth0): state change: ip-check -> secondaries (reason 'none', sys-iface-state: 'managed')
+Jun 22 06:42:45 ip-10-0-0-8 NetworkManager[842]: <info>  [1655880165.9531] device (eth0): state change: secondaries -> activated (reason 'none', sys-iface-state: 'managed')
+Jun 22 06:42:45 ip-10-0-0-8 NetworkManager[842]: <info>  [1655880165.9573] manager: NetworkManager state is now CONNECTED_LOCAL
+Jun 22 06:42:45 ip-10-0-0-8 NetworkManager[842]: <info>  [1655880165.9616] manager: NetworkManager state is now CONNECTED_SITE
+Jun 22 06:42:45 ip-10-0-0-8 NetworkManager[842]: <info>  [1655880165.9626] policy: set 'System eth0' (eth0) as default for IPv4 routing and DNS
+Jun 22 06:42:45 ip-10-0-0-8 dbus-daemon[709]: [system] Activating via systemd: service name='org.freedesktop.resolve1' unit='dbus-org.freedesktop.resolve1.service' requested by ':1.8' (uid=0 pid=842 comm="/usr/sbin/NetworkManager --no-daemon " label="system_u:system_r:NetworkManager_t:s0")
+Jun 22 06:42:45 ip-10-0-0-8 dbus-daemon[709]: [system] Activation via systemd failed for unit 'dbus-org.freedesktop.resolve1.service': Unit dbus-org.freedesktop.resolve1.service not found.
+Jun 22 06:42:45 ip-10-0-0-8 NetworkManager[842]: <info>  [1655880165.9686] device (eth0): Activation: successful, device activated.
+Jun 22 06:42:45 ip-10-0-0-8 NetworkManager[842]: <info>  [1655880165.9720] manager: NetworkManager state is now CONNECTED_GLOBAL
+Jun 22 06:42:45 ip-10-0-0-8 NetworkManager[842]: <info>  [1655880165.9756] manager: startup complete
+Jun 22 06:42:45 ip-10-0-0-8 systemd[1]: Started Network Manager Wait Online.
+Jun 22 06:42:45 ip-10-0-0-8 systemd[1]: Starting Initial cloud-init job (metadata service crawler)...
+Jun 22 06:42:46 ip-10-0-0-8 systemd[1]: nm-cloud-setup.service: Succeeded.
+Jun 22 06:42:46 ip-10-0-0-8 systemd[1]: Started Automatically configure NetworkManager in cloud.
+Jun 22 06:42:46 ip-10-0-0-8 systemd[1]: Starting Automatically configure NetworkManager in cloud...
+Jun 22 06:42:46 ip-10-0-0-8 systemd[1]: nm-cloud-setup.service: Main process exited, code=killed, status=15/TERM
+Jun 22 06:42:46 ip-10-0-0-8 systemd[1]: nm-cloud-setup.service: Failed with result 'signal'.
+Jun 22 06:42:46 ip-10-0-0-8 systemd[1]: Stopped Automatically configure NetworkManager in cloud.
+Jun 22 06:42:46 ip-10-0-0-8 systemd[1]: Starting Automatically configure NetworkManager in cloud...
+Jun 22 06:42:46 ip-10-0-0-8 systemd[1]: nm-cloud-setup.service: Succeeded.
+Jun 22 06:42:46 ip-10-0-0-8 systemd[1]: Started Automatically configure NetworkManager in cloud.
+Jun 22 06:42:46 ip-10-0-0-8 systemd[1]: Started Dynamic System Tuning Daemon.
+Jun 22 06:42:47 ip-10-0-0-8 cloud-init[1064]: Cloud-init v. 21.1-15.el8 running 'init' at Wed, 22 Jun 2022 06:42:46 +0000. Up 11.35 seconds.
+Jun 22 06:42:47 ip-10-0-0-8 cloud-init[1064]: ci-info: ++++++++++++++++++++++++++++++++++++++Net device info++++++++++++++++++++++++++++++++++++++
+Jun 22 06:42:47 ip-10-0-0-8 cloud-init[1064]: ci-info: +--------+------+----------------------------+---------------+--------+-------------------+
+Jun 22 06:42:47 ip-10-0-0-8 cloud-init[1064]: ci-info: | Device |  Up  |          Address           |      Mask     | Scope  |     Hw-Address    |
+Jun 22 06:42:47 ip-10-0-0-8 cloud-init[1064]: ci-info: +--------+------+----------------------------+---------------+--------+-------------------+
+Jun 22 06:42:47 ip-10-0-0-8 cloud-init[1064]: ci-info: |  eth0  | True |          10.0.0.8          | 255.255.255.0 | global | 02:56:5e:f9:4b:ee |
+Jun 22 06:42:47 ip-10-0-0-8 cloud-init[1064]: ci-info: |  eth0  | True | fe80::56:5eff:fef9:4bee/64 |       .       |  link  | 02:56:5e:f9:4b:ee |
+Jun 22 06:42:47 ip-10-0-0-8 cloud-init[1064]: ci-info: |   lo   | True |         127.0.0.1          |   255.0.0.0   |  host  |         .         |
+Jun 22 06:42:47 ip-10-0-0-8 cloud-init[1064]: ci-info: |   lo   | True |          ::1/128           |       .       |  host  |         .         |
+Jun 22 06:42:47 ip-10-0-0-8 cloud-init[1064]: ci-info: +--------+------+----------------------------+---------------+--------+-------------------+
+Jun 22 06:42:47 ip-10-0-0-8 cloud-init[1064]: ci-info: +++++++++++++++++++++++++++Route IPv4 info++++++++++++++++++++++++++++
+Jun 22 06:42:47 ip-10-0-0-8 cloud-init[1064]: ci-info: +-------+-------------+----------+---------------+-----------+-------+
+Jun 22 06:42:47 ip-10-0-0-8 cloud-init[1064]: ci-info: | Route | Destination | Gateway  |    Genmask    | Interface | Flags |
+Jun 22 06:42:47 ip-10-0-0-8 cloud-init[1064]: ci-info: +-------+-------------+----------+---------------+-----------+-------+
+Jun 22 06:42:47 ip-10-0-0-8 cloud-init[1064]: ci-info: |   0   |   0.0.0.0   | 10.0.0.1 |    0.0.0.0    |    eth0   |   UG  |
+Jun 22 06:42:47 ip-10-0-0-8 cloud-init[1064]: ci-info: |   1   |   10.0.0.0  | 0.0.0.0  | 255.255.255.0 |    eth0   |   U   |
+Jun 22 06:42:47 ip-10-0-0-8 cloud-init[1064]: ci-info: +-------+-------------+----------+---------------+-----------+-------+
+Jun 22 06:42:47 ip-10-0-0-8 cloud-init[1064]: ci-info: +++++++++++++++++++Route IPv6 info+++++++++++++++++++
+Jun 22 06:42:47 ip-10-0-0-8 cloud-init[1064]: ci-info: +-------+-------------+---------+-----------+-------+
+Jun 22 06:42:47 ip-10-0-0-8 cloud-init[1064]: ci-info: | Route | Destination | Gateway | Interface | Flags |
+Jun 22 06:42:47 ip-10-0-0-8 cloud-init[1064]: ci-info: +-------+-------------+---------+-----------+-------+
+Jun 22 06:42:47 ip-10-0-0-8 cloud-init[1064]: ci-info: |   1   |  fe80::/64  |    ::   |    eth0   |   U   |
+Jun 22 06:42:47 ip-10-0-0-8 cloud-init[1064]: ci-info: |   3   |  multicast  |    ::   |    eth0   |   U   |
+Jun 22 06:42:47 ip-10-0-0-8 cloud-init[1064]: ci-info: +-------+-------------+---------+-----------+-------+
+Jun 22 06:42:47 ip-10-0-0-8 systemd-udevd[680]: Network interface NamePolicy= disabled on kernel command line, ignoring.
+Jun 22 06:42:48 ip-10-0-0-8 cloud-init[1064]: Generating public/private rsa key pair.
+Jun 22 06:42:48 ip-10-0-0-8 cloud-init[1064]: Your identification has been saved in /etc/ssh/ssh_host_rsa_key.
+Jun 22 06:42:48 ip-10-0-0-8 cloud-init[1064]: Your public key has been saved in /etc/ssh/ssh_host_rsa_key.pub.
+Jun 22 06:42:48 ip-10-0-0-8 cloud-init[1064]: The key fingerprint is:
+Jun 22 06:42:48 ip-10-0-0-8 cloud-init[1064]: SHA256:BErOGf0ilk7dVQLmVRbAzLpGjiMGjdl46LJXYY2Oafg root@ip-10-0-0-8.ap-south-1.compute.internal
+Jun 22 06:42:48 ip-10-0-0-8 cloud-init[1064]: The key's randomart image is:
+Jun 22 06:42:48 ip-10-0-0-8 cloud-init[1064]: +---[RSA 3072]----+
+Jun 22 06:42:48 ip-10-0-0-8 cloud-init[1064]: |    o.. o=++=.   |
+Jun 22 06:42:48 ip-10-0-0-8 cloud-init[1064]: |   + +.+ .=o     |
+Jun 22 06:42:48 ip-10-0-0-8 cloud-init[1064]: |   B== ooo       |
+Jun 22 06:42:48 ip-10-0-0-8 cloud-init[1064]: |  * % +.=        |
+Jun 22 06:42:48 ip-10-0-0-8 cloud-init[1064]: | o @ o =S.       |
+Jun 22 06:42:48 ip-10-0-0-8 cloud-init[1064]: |o = * o +        |
+Jun 22 06:42:48 ip-10-0-0-8 cloud-init[1064]: | = o . o         |
+Jun 22 06:42:48 ip-10-0-0-8 cloud-init[1064]: |. E              |
+Jun 22 06:42:48 ip-10-0-0-8 cloud-init[1064]: | .               |
+Jun 22 06:42:48 ip-10-0-0-8 cloud-init[1064]: +----[SHA256]-----+
+Jun 22 06:42:48 ip-10-0-0-8 cloud-init[1064]: Generating public/private ecdsa key pair.
+Jun 22 06:42:48 ip-10-0-0-8 cloud-init[1064]: Your identification has been saved in /etc/ssh/ssh_host_ecdsa_key.
+Jun 22 06:42:48 ip-10-0-0-8 cloud-init[1064]: Your public key has been saved in /etc/ssh/ssh_host_ecdsa_key.pub.
+Jun 22 06:42:48 ip-10-0-0-8 cloud-init[1064]: The key fingerprint is:
+Jun 22 06:42:48 ip-10-0-0-8 cloud-init[1064]: SHA256:3h2hpUkrkG69AAEuQgAdznXNZb+7jA8QRA088911Kk0 root@ip-10-0-0-8.ap-south-1.compute.internal
+Jun 22 06:42:48 ip-10-0-0-8 cloud-init[1064]: The key's randomart image is:
+Jun 22 06:42:48 ip-10-0-0-8 cloud-init[1064]: +---[ECDSA 256]---+
+Jun 22 06:42:48 ip-10-0-0-8 cloud-init[1064]: |=oooo .=++o      |
+Jun 22 06:42:48 ip-10-0-0-8 cloud-init[1064]: |.+.. o o*...  E o|
+Jun 22 06:42:48 ip-10-0-0-8 cloud-init[1064]: |o + . o .+..++ o.|
+Jun 22 06:42:48 ip-10-0-0-8 cloud-init[1064]: |..   o o o.*oo+  |
+Jun 22 06:42:48 ip-10-0-0-8 cloud-init[1064]: |      + S = o.   |
+Jun 22 06:42:48 ip-10-0-0-8 cloud-init[1064]: |     . o = . o   |
+Jun 22 06:42:48 ip-10-0-0-8 cloud-init[1064]: |        o o o    |
+Jun 22 06:42:48 ip-10-0-0-8 cloud-init[1064]: |           + .   |
+Jun 22 06:42:48 ip-10-0-0-8 cloud-init[1064]: |          ..+    |
+Jun 22 06:42:48 ip-10-0-0-8 cloud-init[1064]: +----[SHA256]-----+
+Jun 22 06:42:48 ip-10-0-0-8 cloud-init[1064]: Generating public/private ed25519 key pair.
+Jun 22 06:42:48 ip-10-0-0-8 cloud-init[1064]: Your identification has been saved in /etc/ssh/ssh_host_ed25519_key.
+Jun 22 06:42:48 ip-10-0-0-8 cloud-init[1064]: Your public key has been saved in /etc/ssh/ssh_host_ed25519_key.pub.
+Jun 22 06:42:48 ip-10-0-0-8 cloud-init[1064]: The key fingerprint is:
+Jun 22 06:42:48 ip-10-0-0-8 cloud-init[1064]: SHA256:01MIt6qN4F4O9o+YTjTVOsqEU0hmFE/q0SnFuF+wPNM root@ip-10-0-0-8.ap-south-1.compute.internal
+Jun 22 06:42:48 ip-10-0-0-8 cloud-init[1064]: The key's randomart image is:
+Jun 22 06:42:48 ip-10-0-0-8 cloud-init[1064]: +--[ED25519 256]--+
+Jun 22 06:42:48 ip-10-0-0-8 cloud-init[1064]: | .*+o   . .      |
+Jun 22 06:42:48 ip-10-0-0-8 cloud-init[1064]: | +.Bo. . o o     |
+Jun 22 06:42:48 ip-10-0-0-8 cloud-init[1064]: |  =o=+. . o .    |
+Jun 22 06:42:48 ip-10-0-0-8 cloud-init[1064]: | ..==.E. o .     |
+Jun 22 06:42:48 ip-10-0-0-8 cloud-init[1064]: |  +.=+o S o      |
+Jun 22 06:42:48 ip-10-0-0-8 cloud-init[1064]: |   *.+ = . .     |
+Jun 22 06:42:48 ip-10-0-0-8 cloud-init[1064]: |    B + .        |
+Jun 22 06:42:48 ip-10-0-0-8 cloud-init[1064]: |   + B .         |
+Jun 22 06:42:48 ip-10-0-0-8 cloud-init[1064]: |   .= +..        |
+Jun 22 06:42:48 ip-10-0-0-8 cloud-init[1064]: +----[SHA256]-----+
+Jun 22 06:42:48 ip-10-0-0-8 systemd[1]: Started Initial cloud-init job (metadata service crawler).
+Jun 22 06:42:48 ip-10-0-0-8 systemd[1]: Starting Permit User Sessions...
+Jun 22 06:42:48 ip-10-0-0-8 systemd[1]: Reached target Network is Online.
+Jun 22 06:42:48 ip-10-0-0-8 systemd[1]: Starting System Logging Service...
+Jun 22 06:42:48 ip-10-0-0-8 systemd[1]: Starting Crash recovery kernel arming...
+Jun 22 06:42:48 ip-10-0-0-8 systemd[1]: Starting LSB: Initializes the correct repo depending on the region....
+Jun 22 06:42:48 ip-10-0-0-8 systemd[1]: Starting OpenSSH server daemon...
+Jun 22 06:42:48 ip-10-0-0-8 systemd[1]: Reached target Cloud-config availability.
+Jun 22 06:42:48 ip-10-0-0-8 systemd[1]: Starting Apply the settings specified in cloud-config...
+Jun 22 06:42:48 ip-10-0-0-8 systemd[1]: Started Permit User Sessions.
+Jun 22 06:42:48 ip-10-0-0-8 systemd[1]: Started Getty on tty1.
+Jun 22 06:42:48 ip-10-0-0-8 systemd[1]: Started Serial Getty on ttyS0.
+Jun 22 06:42:48 ip-10-0-0-8 systemd[1]: Reached target Login Prompts.
+Jun 22 06:42:48 ip-10-0-0-8 systemd[1]: Started Command Scheduler.
+Jun 22 06:42:48 ip-10-0-0-8 choose_repo[1120]: [INFO:choose_repo] choose_repo:33 2022-06-22 06:42:48,269: Enabling binary repos in redhat-rhui.repo
+Jun 22 06:42:48 ip-10-0-0-8 rsyslogd[1111]: [origin software="rsyslogd" swVersion="8.2102.0-7.el8" x-pid="1111" x-info="https://www.rsyslog.com"] start
+Jun 22 06:42:48 ip-10-0-0-8 systemd[1]: Started System Logging Service.
+Jun 22 06:42:48 ip-10-0-0-8 rsyslogd[1111]: imjournal: No statefile exists, /var/lib/rsyslog/imjournal.state will be created (ignore if this is first run): No such file or directory [v8.2102.0-7.el8 try https://www.rsyslog.com/e/2040 ]
+Jun 22 06:42:48 ip-10-0-0-8 systemd[1]: Started OpenSSH server daemon.
+Jun 22 06:42:48 ip-10-0-0-8 choose_repo[1120]: [INFO:choose_repo] choose_repo:54 2022-06-22 06:42:48,352: Enabling client config repo
+Jun 22 06:42:48 ip-10-0-0-8 choose_repo[1120]: [INFO:choose_repo] choose_repo:62 2022-06-22 06:42:48,352: Executing [sed -i 's/enabled=0/enabled=1/' /etc/yum.repos.d/redhat-rhui-client-config.repo]
+Jun 22 06:42:48 ip-10-0-0-8 systemd[1]: Started LSB: Initializes the correct repo depending on the region..
+Jun 22 06:42:48 ip-10-0-0-8 systemd[1]: Reached target Multi-User System.
+Jun 22 06:42:48 ip-10-0-0-8 systemd[1]: Starting Update UTMP about System Runlevel Changes...
+Jun 22 06:42:48 ip-10-0-0-8 rsyslogd[1111]: imjournal: journal files changed, reloading...  [v8.2102.0-7.el8 try https://www.rsyslog.com/e/0 ]
+Jun 22 06:42:48 ip-10-0-0-8 systemd[1]: systemd-update-utmp-runlevel.service: Succeeded.
+Jun 22 06:42:48 ip-10-0-0-8 systemd[1]: Started Update UTMP about System Runlevel Changes.
+Jun 22 06:42:48 ip-10-0-0-8 kdumpctl[1126]: kdump: No kdump initial ramdisk found.
+Jun 22 06:42:48 ip-10-0-0-8 kdumpctl[1126]: kdump: Rebuilding /boot/initramfs-4.18.0-372.9.1.el8.x86_64kdump.img
+Jun 22 06:42:49 ip-10-0-0-8 cloud-init[1384]: Cloud-init v. 21.1-15.el8 running 'modules:config' at Wed, 22 Jun 2022 06:42:49 +0000. Up 13.55 seconds.
+Jun 22 06:42:49 ip-10-0-0-8 dracut[1408]: dracut-049-201.git20220131.el8
+Jun 22 06:42:49 ip-10-0-0-8 chronyd[735]: Selected source 169.254.169.123
+Jun 22 06:42:49 ip-10-0-0-8 systemd[1]: Started Apply the settings specified in cloud-config.
+Jun 22 06:42:49 ip-10-0-0-8 systemd[1]: Starting Execute cloud user/final scripts...
+Jun 22 06:42:49 ip-10-0-0-8 dracut[1410]: Executing: /usr/bin/dracut --add kdumpbase --quiet --hostonly --hostonly-cmdline --hostonly-i18n --hostonly-mode strict -o "plymouth dash resume ifcfg earlykdump" --compress=xz --mount "/dev/disk/by-uuid/eaa1f38e-de0f-4ed5-a5b5-2fa9db43bb38 /sysroot xfs rw,relatime,seclabel,attr2,inode64,logbufs=8,logbsize=32k,noquota,nofail,x-systemd.before=initrd-fs.target" --no-hostonly-default-device -f /boot/initramfs-4.18.0-372.9.1.el8.x86_64kdump.img 4.18.0-372.9.1.el8.x86_64
+Jun 22 06:42:50 ip-10-0-0-8 dracut[1410]: dracut module 'modsign' will not be installed, because command 'keyctl' could not be found!
+Jun 22 06:42:50 ip-10-0-0-8 dracut[1410]: dracut module 'busybox' will not be installed, because command 'busybox' could not be found!
+Jun 22 06:42:50 ip-10-0-0-8 dracut[1410]: dracut module 'rngd' will not be installed, because command 'rngd' could not be found!
+Jun 22 06:42:50 ip-10-0-0-8 dracut[1410]: dracut module 'ifcfg' will not be installed, because it's in the list to be omitted!
+Jun 22 06:42:50 ip-10-0-0-8 ec2[1650]: 
+Jun 22 06:42:50 ip-10-0-0-8 ec2[1650]: #############################################################
+Jun 22 06:42:50 ip-10-0-0-8 ec2[1650]: -----BEGIN SSH HOST KEY FINGERPRINTS-----
+Jun 22 06:42:50 ip-10-0-0-8 ec2[1650]: 256 SHA256:3h2hpUkrkG69AAEuQgAdznXNZb+7jA8QRA088911Kk0 root@ip-10-0-0-8.ap-south-1.compute.internal (ECDSA)
+Jun 22 06:42:50 ip-10-0-0-8 dracut[1410]: dracut module 'plymouth' will not be installed, because it's in the list to be omitted!
+Jun 22 06:42:50 ip-10-0-0-8 ec2[1650]: 256 SHA256:01MIt6qN4F4O9o+YTjTVOsqEU0hmFE/q0SnFuF+wPNM root@ip-10-0-0-8.ap-south-1.compute.internal (ED25519)
+Jun 22 06:42:50 ip-10-0-0-8 ec2[1650]: 3072 SHA256:BErOGf0ilk7dVQLmVRbAzLpGjiMGjdl46LJXYY2Oafg root@ip-10-0-0-8.ap-south-1.compute.internal (RSA)
+Jun 22 06:42:50 ip-10-0-0-8 ec2[1650]: -----END SSH HOST KEY FINGERPRINTS-----
+Jun 22 06:42:50 ip-10-0-0-8 ec2[1650]: #############################################################
+Jun 22 06:42:50 ip-10-0-0-8 dracut[1410]: dracut module 'lvmmerge' will not be installed, because command 'lvm' could not be found!
+Jun 22 06:42:50 ip-10-0-0-8 cloud-init[1564]: Cloud-init v. 21.1-15.el8 running 'modules:final' at Wed, 22 Jun 2022 06:42:50 +0000. Up 14.43 seconds.
+Jun 22 06:42:50 ip-10-0-0-8 cloud-init[1564]: Cloud-init v. 21.1-15.el8 finished at Wed, 22 Jun 2022 06:42:50 +0000. Datasource DataSourceEc2Local.  Up 14.70 seconds
+Jun 22 06:42:50 ip-10-0-0-8 dracut[1410]: dracut module 'btrfs' will not be installed, because command 'btrfs' could not be found!
+Jun 22 06:42:50 ip-10-0-0-8 dracut[1410]: dracut module 'dmraid' will not be installed, because command 'dmraid' could not be found!
+Jun 22 06:42:50 ip-10-0-0-8 dracut[1410]: dracut module 'lvm' will not be installed, because command 'lvm' could not be found!
+Jun 22 06:42:50 ip-10-0-0-8 dracut[1410]: dracut module 'mdraid' will not be installed, because command 'mdadm' could not be found!
+Jun 22 06:42:50 ip-10-0-0-8 systemd[1]: Reloading Network Manager.
+Jun 22 06:42:50 ip-10-0-0-8 NetworkManager[842]: <info>  [1655880170.5287] audit: op="reload" arg="0" pid=1816 uid=0 result="success"
+Jun 22 06:42:50 ip-10-0-0-8 NetworkManager[842]: <info>  [1655880170.5294] config: signal: SIGHUP (no changes from disk)
+Jun 22 06:42:50 ip-10-0-0-8 dracut[1410]: dracut module 'cifs' will not be installed, because command 'mount.cifs' could not be found!
+Jun 22 06:42:50 ip-10-0-0-8 systemd[1]: Reloaded Network Manager.
+Jun 22 06:42:50 ip-10-0-0-8 systemd[1]: Started Execute cloud user/final scripts.
+Jun 22 06:42:50 ip-10-0-0-8 systemd[1]: Reached target Cloud-init target.
+Jun 22 06:42:50 ip-10-0-0-8 dracut[1410]: dracut module 'iscsi' will not be installed, because command 'iscsi-iname' could not be found!
+Jun 22 06:42:50 ip-10-0-0-8 dracut[1410]: dracut module 'iscsi' will not be installed, because command 'iscsiadm' could not be found!
+Jun 22 06:42:50 ip-10-0-0-8 dracut[1410]: dracut module 'iscsi' will not be installed, because command 'iscsid' could not be found!
+Jun 22 06:42:50 ip-10-0-0-8 dracut[1410]: 95nfs: Could not find any command of 'rpcbind portmap'!
+Jun 22 06:42:50 ip-10-0-0-8 dracut[1410]: dracut module 'nvmf' will not be installed, because command 'nvme' could not be found!
+Jun 22 06:42:50 ip-10-0-0-8 dracut[1410]: dracut module 'resume' will not be installed, because it's in the list to be omitted!
+Jun 22 06:42:50 ip-10-0-0-8 dracut[1410]: dracut module 'biosdevname' will not be installed, because command 'biosdevname' could not be found!
+Jun 22 06:42:50 ip-10-0-0-8 dracut[1410]: dracut module 'earlykdump' will not be installed, because it's in the list to be omitted!
+Jun 22 06:42:50 ip-10-0-0-8 dracut[1410]: memstrack is available
+Jun 22 06:42:51 ip-10-0-0-8 dracut[1410]: dracut module 'modsign' will not be installed, because command 'keyctl' could not be found!
+Jun 22 06:42:51 ip-10-0-0-8 dracut[1410]: dracut module 'busybox' will not be installed, because command 'busybox' could not be found!
+Jun 22 06:42:51 ip-10-0-0-8 dracut[1410]: dracut module 'rngd' will not be installed, because command 'rngd' could not be found!
+Jun 22 06:42:51 ip-10-0-0-8 dracut[1410]: dracut module 'lvmmerge' will not be installed, because command 'lvm' could not be found!
+Jun 22 06:42:51 ip-10-0-0-8 dracut[1410]: dracut module 'btrfs' will not be installed, because command 'btrfs' could not be found!
+Jun 22 06:42:51 ip-10-0-0-8 dracut[1410]: dracut module 'dmraid' will not be installed, because command 'dmraid' could not be found!
+Jun 22 06:42:51 ip-10-0-0-8 dracut[1410]: dracut module 'lvm' will not be installed, because command 'lvm' could not be found!
+Jun 22 06:42:51 ip-10-0-0-8 dracut[1410]: dracut module 'mdraid' will not be installed, because command 'mdadm' could not be found!
+Jun 22 06:42:51 ip-10-0-0-8 dracut[1410]: dracut module 'cifs' will not be installed, because command 'mount.cifs' could not be found!
+Jun 22 06:42:51 ip-10-0-0-8 dracut[1410]: dracut module 'iscsi' will not be installed, because command 'iscsi-iname' could not be found!
+Jun 22 06:42:51 ip-10-0-0-8 dracut[1410]: dracut module 'iscsi' will not be installed, because command 'iscsiadm' could not be found!
+Jun 22 06:42:51 ip-10-0-0-8 dracut[1410]: dracut module 'iscsi' will not be installed, because command 'iscsid' could not be found!
+Jun 22 06:42:51 ip-10-0-0-8 dracut[1410]: 95nfs: Could not find any command of 'rpcbind portmap'!
+Jun 22 06:42:51 ip-10-0-0-8 dracut[1410]: dracut module 'nvmf' will not be installed, because command 'nvme' could not be found!
+Jun 22 06:42:51 ip-10-0-0-8 dracut[1410]: *** Including module: bash ***
+Jun 22 06:42:51 ip-10-0-0-8 dracut[1410]: *** Including module: systemd ***
+Jun 22 06:42:51 ip-10-0-0-8 dracut[1410]: *** Including module: systemd-initrd ***
+Jun 22 06:42:51 ip-10-0-0-8 dracut[1410]: *** Including module: watchdog-modules ***
+Jun 22 06:42:51 ip-10-0-0-8 dracut[1410]: *** Including module: i18n ***
+Jun 22 06:42:51 ip-10-0-0-8 dracut[1410]: *** Including module: drm ***
+Jun 22 06:42:51 ip-10-0-0-8 dracut[1410]: *** Including module: prefixdevname ***
+Jun 22 06:42:51 ip-10-0-0-8 dracut[1410]: *** Including module: kernel-modules ***
+Jun 22 06:42:52 ip-10-0-0-8 dracut[1410]: *** Including module: kernel-modules-extra ***
+Jun 22 06:42:52 ip-10-0-0-8 dracut[1410]: *** Including module: fstab-sys ***
+Jun 22 06:42:52 ip-10-0-0-8 dracut[1410]: *** Including module: rootfs-block ***
+Jun 22 06:42:52 ip-10-0-0-8 dracut[1410]: *** Including module: terminfo ***
+Jun 22 06:42:52 ip-10-0-0-8 dracut[1410]: *** Including module: udev-rules ***
+Jun 22 06:42:52 ip-10-0-0-8 dracut[1410]: Skipping udev rule: 91-permissions.rules
+Jun 22 06:42:52 ip-10-0-0-8 dracut[1410]: Skipping udev rule: 80-drivers-modprobe.rules
+Jun 22 06:42:52 ip-10-0-0-8 dracut[1410]: *** Including module: dracut-systemd ***
+Jun 22 06:42:52 ip-10-0-0-8 dracut[1410]: *** Including module: usrmount ***
+Jun 22 06:42:52 ip-10-0-0-8 dracut[1410]: *** Including module: base ***
+Jun 22 06:42:52 ip-10-0-0-8 dracut[1410]: *** Including module: fs-lib ***
+Jun 22 06:42:52 ip-10-0-0-8 dracut[1410]: *** Including module: kdumpbase ***
+Jun 22 06:42:53 ip-10-0-0-8 dracut[1410]: *** Including module: memstrack ***
+Jun 22 06:42:53 ip-10-0-0-8 dracut[1410]: *** Including module: microcode_ctl-fw_dir_override ***
+Jun 22 06:42:53 ip-10-0-0-8 dracut[1410]:  microcode_ctl module: mangling fw_dir
+Jun 22 06:42:53 ip-10-0-0-8 dracut[1410]:    microcode_ctl: reset fw_dir to "/lib/firmware/updates /lib/firmware"
+Jun 22 06:42:53 ip-10-0-0-8 dracut[1410]:    microcode_ctl: processing data directory  "/usr/share/microcode_ctl/ucode_with_caveats/intel"...
+Jun 22 06:42:53 ip-10-0-0-8 dracut[1410]:      microcode_ctl: intel: caveats check for kernel version "4.18.0-372.9.1.el8.x86_64" passed, adding "/usr/share/microcode_ctl/ucode_with_caveats/intel" to fw_dir variable
+Jun 22 06:42:53 ip-10-0-0-8 dracut[1410]:    microcode_ctl: processing data directory  "/usr/share/microcode_ctl/ucode_with_caveats/intel-06-2d-07"...
+Jun 22 06:42:53 ip-10-0-0-8 dracut[1410]:    microcode_ctl: configuration "intel-06-2d-07" is ignored
+Jun 22 06:42:53 ip-10-0-0-8 dracut[1410]:    microcode_ctl: processing data directory  "/usr/share/microcode_ctl/ucode_with_caveats/intel-06-4e-03"...
+Jun 22 06:42:53 ip-10-0-0-8 dracut[1410]:    microcode_ctl: configuration "intel-06-4e-03" is ignored
+Jun 22 06:42:53 ip-10-0-0-8 dracut[1410]:    microcode_ctl: processing data directory  "/usr/share/microcode_ctl/ucode_with_caveats/intel-06-4f-01"...
+Jun 22 06:42:53 ip-10-0-0-8 dracut[1410]:    microcode_ctl: configuration "intel-06-4f-01" is ignored
+Jun 22 06:42:53 ip-10-0-0-8 dracut[1410]:    microcode_ctl: processing data directory  "/usr/share/microcode_ctl/ucode_with_caveats/intel-06-55-04"...
+Jun 22 06:42:53 ip-10-0-0-8 dracut[1410]:    microcode_ctl: configuration "intel-06-55-04" is ignored
+Jun 22 06:42:53 ip-10-0-0-8 dracut[1410]:    microcode_ctl: processing data directory  "/usr/share/microcode_ctl/ucode_with_caveats/intel-06-5e-03"...
+Jun 22 06:42:53 ip-10-0-0-8 dracut[1410]:    microcode_ctl: configuration "intel-06-5e-03" is ignored
+Jun 22 06:42:53 ip-10-0-0-8 dracut[1410]:    microcode_ctl: processing data directory  "/usr/share/microcode_ctl/ucode_with_caveats/intel-06-8c-01"...
+Jun 22 06:42:53 ip-10-0-0-8 dracut[1410]:    microcode_ctl: configuration "intel-06-8c-01" is ignored
+Jun 22 06:42:53 ip-10-0-0-8 dracut[1410]:    microcode_ctl: processing data directory  "/usr/share/microcode_ctl/ucode_with_caveats/intel-06-8e-9e-0x-0xca"...
+Jun 22 06:42:53 ip-10-0-0-8 dracut[1410]:    microcode_ctl: configuration "intel-06-8e-9e-0x-0xca" is ignored
+Jun 22 06:42:53 ip-10-0-0-8 dracut[1410]:    microcode_ctl: processing data directory  "/usr/share/microcode_ctl/ucode_with_caveats/intel-06-8e-9e-0x-dell"...
+Jun 22 06:42:53 ip-10-0-0-8 dracut[1410]:    microcode_ctl: configuration "intel-06-8e-9e-0x-dell" is ignored
+Jun 22 06:42:53 ip-10-0-0-8 dracut[1410]:    microcode_ctl: final fw_dir: "/usr/share/microcode_ctl/ucode_with_caveats/intel /lib/firmware/updates /lib/firmware"
+Jun 22 06:42:53 ip-10-0-0-8 dracut[1410]: *** Including module: shutdown ***
+Jun 22 06:42:53 ip-10-0-0-8 dracut[1410]: *** Including module: squash ***
+Jun 22 06:42:53 ip-10-0-0-8 dracut[1410]: *** Including modules done ***
+Jun 22 06:42:53 ip-10-0-0-8 dracut[1410]: *** Installing kernel module dependencies ***
+Jun 22 06:42:53 ip-10-0-0-8 dracut[1410]: *** Installing kernel module dependencies done ***
+Jun 22 06:42:53 ip-10-0-0-8 dracut[1410]: *** Resolving executable dependencies ***
+Jun 22 06:42:54 ip-10-0-0-8 dracut[1410]: *** Resolving executable dependencies done***
+Jun 22 06:42:54 ip-10-0-0-8 dracut[1410]: *** Hardlinking files ***
+Jun 22 06:42:54 ip-10-0-0-8 dracut[1410]: *** Hardlinking files done ***
+Jun 22 06:42:54 ip-10-0-0-8 dracut[1410]: Could not find 'strip'. Not stripping the initramfs.
+Jun 22 06:42:55 ip-10-0-0-8 dracut[1410]: *** Generating early-microcode cpio image ***
+Jun 22 06:42:55 ip-10-0-0-8 dracut[1410]: *** Constructing GenuineIntel.bin ***
+Jun 22 06:42:55 ip-10-0-0-8 dracut[1410]: *** Constructing GenuineIntel.bin ***
+Jun 22 06:42:55 ip-10-0-0-8 dracut[1410]: *** Store current command line parameters ***
+Jun 22 06:42:55 ip-10-0-0-8 dracut[1410]: Stored kernel commandline:
+Jun 22 06:42:55 ip-10-0-0-8 dracut[1410]: No dracut internal kernel commandline stored in the initramfs
+Jun 22 06:42:55 ip-10-0-0-8 dracut[1410]: *** Install squash loader ***
+Jun 22 06:42:55 ip-10-0-0-8 dracut[1410]: *** Squashing the files inside the initramfs ***
+Jun 22 06:42:56 ip-10-0-0-8 systemd[1]: NetworkManager-dispatcher.service: Succeeded.
+Jun 22 06:43:07 ip-10-0-0-8 dracut[1410]: *** Squashing the files inside the initramfs done ***
+Jun 22 06:43:07 ip-10-0-0-8 dracut[1410]: *** Creating image file '/boot/initramfs-4.18.0-372.9.1.el8.x86_64kdump.img' ***
+Jun 22 06:43:07 ip-10-0-0-8 dracut[1410]: *** Creating initramfs image file '/boot/initramfs-4.18.0-372.9.1.el8.x86_64kdump.img' done ***
+Jun 22 06:43:08 ip-10-0-0-8 kdumpctl[1126]: kdump: kexec: loaded kdump kernel
+Jun 22 06:43:08 ip-10-0-0-8 kdumpctl[1126]: kdump: Starting kdump: [OK]
+Jun 22 06:43:08 ip-10-0-0-8 systemd[1]: Started Crash recovery kernel arming.
+Jun 22 06:43:08 ip-10-0-0-8 systemd[1]: Startup finished in 1.961s (kernel) + 3.163s (initrd) + 27.655s (userspace) = 32.779s.
+Jun 22 06:43:15 ip-10-0-0-8 systemd[1]: systemd-hostnamed.service: Succeeded.
+Jun 22 06:45:10 ip-10-0-0-8 systemd[1]: Created slice User Slice of UID 1000.
+Jun 22 06:45:10 ip-10-0-0-8 systemd[1]: Starting User runtime directory /run/user/1000...
+Jun 22 06:45:10 ip-10-0-0-8 systemd-logind[794]: New session 1 of user ec2-user.
+Jun 22 06:45:10 ip-10-0-0-8 systemd[1]: Started User runtime directory /run/user/1000.
+Jun 22 06:45:10 ip-10-0-0-8 systemd[1]: Starting User Manager for UID 1000...
+Jun 22 06:45:10 ip-10-0-0-8 systemd[4766]: Started Mark boot as successful after the user session has run 2 minutes.
+Jun 22 06:45:10 ip-10-0-0-8 systemd[4766]: Starting D-Bus User Message Bus Socket.
+Jun 22 06:45:10 ip-10-0-0-8 systemd[4766]: Reached target Paths.
+Jun 22 06:45:10 ip-10-0-0-8 systemd[4766]: Reached target Timers.
+Jun 22 06:45:10 ip-10-0-0-8 systemd[4766]: Listening on D-Bus User Message Bus Socket.
+Jun 22 06:45:10 ip-10-0-0-8 systemd[4766]: Reached target Sockets.
+Jun 22 06:45:10 ip-10-0-0-8 systemd[4766]: Reached target Basic System.
+Jun 22 06:45:10 ip-10-0-0-8 systemd[4766]: Reached target Default.
+Jun 22 06:45:10 ip-10-0-0-8 systemd[4766]: Startup finished in 49ms.
+Jun 22 06:45:10 ip-10-0-0-8 systemd[1]: Started User Manager for UID 1000.
+Jun 22 06:45:10 ip-10-0-0-8 systemd[1]: Started Session 1 of user ec2-user.
+Jun 22 06:45:13 ip-10-0-0-8 su[4805]: (to root) ec2-user on pts/0
+Jun 22 06:46:02 ip-10-0-0-8 systemd[1]: Started /usr/bin/systemctl start man-db-cache-update.
+Jun 22 06:46:02 ip-10-0-0-8 systemd[1]: cgroup compatibility translation between legacy and unified hierarchy settings activated. See cgroup-compat debug messages for details.
+Jun 22 06:46:02 ip-10-0-0-8 systemd[1]: Starting man-db-cache-update.service...
+Jun 22 06:46:11 ip-10-0-0-8 systemd[1]: man-db-cache-update.service: Succeeded.
+Jun 22 06:46:11 ip-10-0-0-8 systemd[1]: Started man-db-cache-update.service.
+Jun 22 06:46:11 ip-10-0-0-8 systemd[1]: run-ra5b6efcc06644c1b80ebf199445fe0d7.service: Succeeded.
+Jun 22 06:47:52 ip-10-0-0-8 systemd[1]: Starting Automatically configure NetworkManager in cloud...
+Jun 22 06:47:52 ip-10-0-0-8 systemd[4766]: Starting Mark boot as successful...
+Jun 22 06:47:52 ip-10-0-0-8 systemd[4766]: Started Mark boot as successful.
+Jun 22 06:47:52 ip-10-0-0-8 systemd[1]: nm-cloud-setup.service: Succeeded.
+Jun 22 06:47:52 ip-10-0-0-8 systemd[1]: Started Automatically configure NetworkManager in cloud.
